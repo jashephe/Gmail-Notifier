@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AAD501116937B1300FF3658 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAD501016937B1300FF3658 /* Cocoa.framework */; };
+		1AAD501B16937B1300FF3658 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AAD501916937B1300FF3658 /* InfoPlist.strings */; };
+		1AAD501D16937B1300FF3658 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD501C16937B1300FF3658 /* main.m */; };
+		1AAD502116937B1300FF3658 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1AAD501F16937B1300FF3658 /* Credits.rtf */; };
+		1AAD502416937B1300FF3658 /* GNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD502316937B1300FF3658 /* GNAppDelegate.m */; };
+		1AAD502716937B1300FF3658 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AAD502516937B1300FF3658 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1AAD500C16937B1300FF3658 /* Gmail Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gmail Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAD501016937B1300FF3658 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1AAD501316937B1300FF3658 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1AAD501416937B1300FF3658 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1AAD501516937B1300FF3658 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1AAD501816937B1300FF3658 /* Gmail Notifier-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gmail Notifier-Info.plist"; sourceTree = "<group>"; };
+		1AAD501A16937B1300FF3658 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AAD501C16937B1300FF3658 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AAD501E16937B1300FF3658 /* Gmail Notifier-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gmail Notifier-Prefix.pch"; sourceTree = "<group>"; };
+		1AAD502016937B1300FF3658 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1AAD502216937B1300FF3658 /* GNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNAppDelegate.h; sourceTree = "<group>"; };
+		1AAD502316937B1300FF3658 /* GNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNAppDelegate.m; sourceTree = "<group>"; };
+		1AAD502616937B1300FF3658 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AAD500916937B1300FF3658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAD501116937B1300FF3658 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AAD500116937B1300FF3658 = {
+			isa = PBXGroup;
+			children = (
+				1AAD501616937B1300FF3658 /* Gmail Notifier */,
+				1AAD500F16937B1300FF3658 /* Frameworks */,
+				1AAD500D16937B1300FF3658 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AAD500D16937B1300FF3658 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AAD500C16937B1300FF3658 /* Gmail Notifier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AAD500F16937B1300FF3658 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AAD501016937B1300FF3658 /* Cocoa.framework */,
+				1AAD501216937B1300FF3658 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AAD501216937B1300FF3658 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AAD501316937B1300FF3658 /* AppKit.framework */,
+				1AAD501416937B1300FF3658 /* CoreData.framework */,
+				1AAD501516937B1300FF3658 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1AAD501616937B1300FF3658 /* Gmail Notifier */ = {
+			isa = PBXGroup;
+			children = (
+				1AAD502216937B1300FF3658 /* GNAppDelegate.h */,
+				1AAD502316937B1300FF3658 /* GNAppDelegate.m */,
+				1AAD502516937B1300FF3658 /* MainMenu.xib */,
+				1AAD501716937B1300FF3658 /* Supporting Files */,
+			);
+			path = "Gmail Notifier";
+			sourceTree = "<group>";
+		};
+		1AAD501716937B1300FF3658 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AAD501816937B1300FF3658 /* Gmail Notifier-Info.plist */,
+				1AAD501916937B1300FF3658 /* InfoPlist.strings */,
+				1AAD501C16937B1300FF3658 /* main.m */,
+				1AAD501E16937B1300FF3658 /* Gmail Notifier-Prefix.pch */,
+				1AAD501F16937B1300FF3658 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AAD500B16937B1300FF3658 /* Gmail Notifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAD502A16937B1300FF3658 /* Build configuration list for PBXNativeTarget "Gmail Notifier" */;
+			buildPhases = (
+				1AAD500816937B1300FF3658 /* Sources */,
+				1AAD500916937B1300FF3658 /* Frameworks */,
+				1AAD500A16937B1300FF3658 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gmail Notifier";
+			productName = "Gmail Notifier";
+			productReference = 1AAD500C16937B1300FF3658 /* Gmail Notifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AAD500316937B1300FF3658 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GN;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "James Shepherdson";
+			};
+			buildConfigurationList = 1AAD500616937B1300FF3658 /* Build configuration list for PBXProject "Gmail Notifier" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1AAD500116937B1300FF3658;
+			productRefGroup = 1AAD500D16937B1300FF3658 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AAD500B16937B1300FF3658 /* Gmail Notifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AAD500A16937B1300FF3658 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAD501B16937B1300FF3658 /* InfoPlist.strings in Resources */,
+				1AAD502116937B1300FF3658 /* Credits.rtf in Resources */,
+				1AAD502716937B1300FF3658 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AAD500816937B1300FF3658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAD501D16937B1300FF3658 /* main.m in Sources */,
+				1AAD502416937B1300FF3658 /* GNAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1AAD501916937B1300FF3658 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AAD501A16937B1300FF3658 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1AAD501F16937B1300FF3658 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AAD502016937B1300FF3658 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1AAD502516937B1300FF3658 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AAD502616937B1300FF3658 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AAD502816937B1300FF3658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1AAD502916937B1300FF3658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1AAD502B16937B1300FF3658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gmail Notifier/Gmail Notifier-Prefix.pch";
+				INFOPLIST_FILE = "Gmail Notifier/Gmail Notifier-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1AAD502C16937B1300FF3658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gmail Notifier/Gmail Notifier-Prefix.pch";
+				INFOPLIST_FILE = "Gmail Notifier/Gmail Notifier-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AAD500616937B1300FF3658 /* Build configuration list for PBXProject "Gmail Notifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAD502816937B1300FF3658 /* Debug */,
+				1AAD502916937B1300FF3658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AAD502A16937B1300FF3658 /* Build configuration list for PBXNativeTarget "Gmail Notifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAD502B16937B1300FF3658 /* Debug */,
+				1AAD502C16937B1300FF3658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AAD500316937B1300FF3658 /* Project object */;
+}
