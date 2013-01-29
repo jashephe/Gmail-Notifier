@@ -1,0 +1,6 @@
+[submodule "External Sources/LaunchAtLoginController"]
+	path = External Sources/LaunchAtLoginController
+	url = https://github.com/jashephe/LaunchAtLoginController.git
+[submodule "External Sources/MASPreferences"]
+	path = External Sources/MASPreferences
+	url = https://github.com/jashephe/MASPreferences.git

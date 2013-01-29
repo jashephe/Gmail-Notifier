@@ -10,6 +10,9 @@
 
 @interface GNAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+- (void)goToInbox;
+- (void)showPreferences;
+- (void)showAboutPanel;
+- (void)quit;
 
 @end
