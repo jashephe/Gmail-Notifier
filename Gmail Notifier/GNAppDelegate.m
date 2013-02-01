@@ -48,7 +48,7 @@
 
 // Convenient shortcut to opening Gmail in the user's default browser.
 - (void)goToInbox {
-	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://mail.google.com/"]];
+	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://mail.google.com/"]];
 }
 
 // Creates (if necessary) and shows the preferences window.
