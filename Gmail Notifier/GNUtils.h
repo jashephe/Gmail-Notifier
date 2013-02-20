@@ -17,7 +17,6 @@ extern NSString *const GNAuthDidChangeNotification;
 #pragma mark Keys
 extern NSString *const GNMessageURLKey;
 extern NSString *const GNMessageIDKey;
-extern NSString *const GNLastCheckedKey;
 extern NSString *const GNPrefsRefreshIntervalKey;
 extern NSString *const GNPrefsShowSnippetsKey;
 extern NSString *const GNPrefsShowUnreadCountInStatusItemKey;

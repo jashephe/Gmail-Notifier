@@ -106,7 +106,7 @@ NSString * currentTimeString() {
 
 - (void)checkForNewEmails {
 	if ([[GNMailAccountManager sharedAccountManager] isReady]) {
-		[self.statusItem.menu.itemArray[1] setTitle:[NSString stringWithFormat:@"Last checked at: %@", currentTimeString()]];
+		[self.statusItem.menu.itemArray[1] setTitle:[NSString stringWithFormat:NSLocalizedString(@"Last checked at: %@", @"Status menu check history"), currentTimeString()]];
 		
 		NSURL *url = [NSURL URLWithString:GNOAuth2ServiceAddress];
 		NSURLRequest *request = [NSURLRequest requestWithURL:url];

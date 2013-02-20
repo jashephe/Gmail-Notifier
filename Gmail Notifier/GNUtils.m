@@ -19,7 +19,6 @@ NSString *const GNAuthDidChangeNotification = @"notification.authDidChange";
 #pragma mark Keys
 NSString *const GNMessageURLKey = @"key.messageURL";
 NSString *const GNMessageIDKey = @"key.messageID";
-NSString *const GNLastCheckedKey = @"key.lastChecked";
 NSString *const GNPrefsRefreshIntervalKey = @"prefs.refreshInterval";
 NSString *const GNPrefsShowSnippetsKey = @"prefs.showSnippets";
 NSString *const GNPrefsShowUnreadCountInStatusItemKey = @"prefs.showUnreadCount";
