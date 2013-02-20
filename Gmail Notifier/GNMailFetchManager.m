@@ -120,6 +120,7 @@ NSString * currentTimeString() {
 				if (numMessages == 0) {
 					self.statusItem.title = @"";
 					[self.statusItem setImage:defaultStatusIcon()];
+					[self reconcileNotifications:nil];
 				}
 				else {
 					if ([[NSUserDefaults standardUserDefaults] boolForKey:GNPrefsShowUnreadCountInStatusItemKey])
@@ -128,6 +129,7 @@ NSString * currentTimeString() {
 						self.statusItem.title = @"";
 					[self.statusItem setImage:attentionStatusIcon()];
 					
+					NSMutableArray *notificationsToBeDelivered = [[NSMutableArray alloc] initWithCapacity:1];
 					for (NSXMLElement *element in [response.rootElement elementsForName:@"entry"]) {
 						NSUserNotification *notification = [[NSUserNotification alloc] init];
 						notification.soundName = @"mail_new";
@@ -147,26 +149,31 @@ NSString * currentTimeString() {
 								break;
 						}
 						
+						// Try to set the notification title to the message title.
 						if ([element elementsForName:@"title"].count > 0)
 							notification.title = [[element elementsForName:@"title"][0] stringValue];
 						
-						// If the user doesn't want snippets, don't set any informative text.
+						// If the user doesn't want snippets, don't set any informative text, otherwise try to set the the informative
+						// text to the message summary.
 						if ([[NSUserDefaults standardUserDefaults] boolForKey:GNPrefsShowSnippetsKey] && [element elementsForName:@"summary"].count > 0)
 							notification.informativeText = [[element elementsForName:@"summary"][0] stringValue];
 						
+						// Try to get the message URL
 						NSString *messageURL = @"";
 						if ([element elementsForName:@"link"].count > 0)
 							messageURL = [[[element elementsForName:@"link"][0] attributeForName:@"href"] stringValue];
 						
+						// Try to get the unique ID of the message (used for avoiding sending duplicate notifications).
 						NSString *messageID = @"";
 						if ([element elementsForName:@"id"].count > 0)
 							messageID = [[element elementsForName:@"id"][0] stringValue];
 						
 						notification.userInfo = [NSDictionary dictionaryWithObjectsAndKeys:messageID, GNMessageIDKey, messageURL, GNMessageURLKey, nil];
 						
-						if (mailNotificationNotYetDelivered(notification))
-							[[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+						// Add the current notification to the list of potential notifications.
+						[notificationsToBeDelivered addObject:notification];
 					}
+					[self reconcileNotifications:notificationsToBeDelivered];
 				}
 			}
 		}];
@@ -246,7 +253,6 @@ NSMenu * fabricateStatusMenu() {
 // open the URL encoded in the user notification's userInfo attribute, and then remove it from
 // Notification Center.
 - (void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification {
-	//TODO:  Remove counter from status item
 	//FIXME:  Not called when application launched from a notification...
 	if (notification.userInfo != nil && notification.userInfo[GNMessageURLKey] != nil)
 		[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:notification.userInfo[GNMessageURLKey]]];
@@ -275,6 +281,33 @@ BOOL mailNotificationNotYetDelivered(NSUserNotification *theNotification) {
 			if ([theNotification.userInfo[GNMessageIDKey] isEqual:aNotification.userInfo[GNMessageIDKey]])
 				return NO;
 	return YES;
+}
+
+- (void)reconcileNotifications:(NSArray *)notificationsToBeDeliveredOrNil {
+	if (notificationsToBeDeliveredOrNil == nil)
+		for (NSUserNotification *aDeliveredNotification in [NSUserNotificationCenter defaultUserNotificationCenter].deliveredNotifications)
+			if (aDeliveredNotification.userInfo != nil && aDeliveredNotification.userInfo[GNMessageIDKey] != nil)
+				[[NSUserNotificationCenter defaultUserNotificationCenter] removeDeliveredNotification:aDeliveredNotification];
+
+	for (NSUserNotification *aDeliveredNotification in [NSUserNotificationCenter defaultUserNotificationCenter].deliveredNotifications) {
+		if (aDeliveredNotification.userInfo != nil && aDeliveredNotification.userInfo[GNMessageIDKey] != nil) {
+			BOOL messageStillNew = NO;
+			for (NSUserNotification *aPotentialNotification in notificationsToBeDeliveredOrNil) {
+				if (aPotentialNotification.userInfo != nil && aPotentialNotification.userInfo[GNMessageIDKey] != nil) {
+					if ([aDeliveredNotification.userInfo[GNMessageIDKey] isEqual:aPotentialNotification.userInfo[GNMessageIDKey]]) {
+						messageStillNew = YES;
+						break;
+					}
+				}
+			}
+			if (!messageStillNew)
+				[[NSUserNotificationCenter defaultUserNotificationCenter] removeDeliveredNotification:aDeliveredNotification];
+		}
+	}
+	
+	for (NSUserNotification *aPotentialNotification in notificationsToBeDeliveredOrNil)
+		if (mailNotificationNotYetDelivered(aPotentialNotification))
+			[[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:aPotentialNotification];
 }
 
 @end
