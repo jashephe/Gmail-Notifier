@@ -1,6 +1,6 @@
 ![Gmail Notifier Logo][logo]
 #Gmail Notifier
-###[Download](https://s3.amazonaws.com/Gmail-Notifier/Gmail+Notifier.zip)
+###[Download](https://github.com/jashephe/Gmail-Notifier/releases)
 Minimalist Gmail inbox notifications for Mac OS X.
 
 ##What Gmail Notifier is
