@@ -153,6 +153,23 @@ NSString * currentTimeString() {
 						if ([element elementsForName:@"title"].count > 0)
 							notification.title = [[element elementsForName:@"title"][0] stringValue];
 						
+						// Try to set the notification subtitle to the message author.
+						if ([element elementsForName:@"author"].count > 0) {
+							NSString *subtitle = @"";
+							BOOL emailParens = NO;
+							if ([[element elementsForName:@"author"][0] elementsForName:@"name"].count > 0) {
+								subtitle = [[[element elementsForName:@"author"][0] elementsForName:@"name"][0] stringValue];
+								emailParens = YES;
+							}
+							if ([[element elementsForName:@"author"][0] elementsForName:@"email"].count > 0) {
+								if (emailParens)
+									subtitle = [NSString stringWithFormat:@"%@ (%@)", subtitle, [[[element elementsForName:@"author"][0] elementsForName:@"email"][0] stringValue]];
+								else
+									subtitle = [[[element elementsForName:@"author"][0] elementsForName:@"email"][0] stringValue];
+							}
+							notification.subtitle = subtitle;
+						}
+						
 						// If the user doesn't want snippets, don't set any informative text, otherwise try to set the the informative
 						// text to the message summary.
 						if ([[NSUserDefaults standardUserDefaults] boolForKey:GNPrefsShowSnippetsKey] && [element elementsForName:@"summary"].count > 0)
