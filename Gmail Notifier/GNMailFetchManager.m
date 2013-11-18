@@ -134,9 +134,9 @@ NSString * currentTimeString() {
 						NSUserNotification *notification = [[NSUserNotification alloc] init];
 						notification.soundName = @"mail_new";
 						
-						// If the user only wants to see new messages, get the message modification date, and compare it to the one
-						// created at launch.
-						if ([[NSUserDefaults standardUserDefaults] boolForKey:GNPrefsOnlyShowNewMessagesKey] && [element elementsForName:@"modified"].count > 0) {
+						// Try to set the notification date to the message date
+						NSDate *messageDate = [NSDate date];
+						if ([element elementsForName:@"modified"].count > 0) {
 							NSString *dateString = [[element elementsForName:@"modified"][0] stringValue];
 							NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 							
@@ -144,7 +144,13 @@ NSString * currentTimeString() {
 							[formatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"];
 							[formatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
 							
-							NSDate *messageDate = [formatter dateFromString:dateString];
+							messageDate = [formatter dateFromString:dateString];
+						}
+						notification.deliveryDate = messageDate;
+						
+						// If the user only wants to see new messages, get the message modification date, and compare it to the one
+						// created at launch.
+						if ([[NSUserDefaults standardUserDefaults] boolForKey:GNPrefsOnlyShowNewMessagesKey] && [element elementsForName:@"modified"].count > 0) {
 							if ([self.creationTime compare:messageDate] != NSOrderedAscending)
 								break;
 						}
