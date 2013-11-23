@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C51F03124044B94ABB53C3A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B67609A5C31F4106BD784A91 /* libPods.a */; };
 		1A1925761697425800553108 /* GNGeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1925781697425800553108 /* GNGeneralPreferencesViewController.xib */; };
 		1A19257C1697426400553108 /* GNAccountPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A19257E1697426400553108 /* GNAccountPreferencesViewController.xib */; };
 		1A192580169742BE00553108 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A19257F169742BE00553108 /* MainMenu.xib */; };
@@ -27,51 +28,9 @@
 		1AAD503116937B4D00FF3658 /* mail_alt.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AAD502E16937B4D00FF3658 /* mail_alt.pdf */; };
 		1AAD503216937B4D00FF3658 /* mail_new.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AAD502F16937B4D00FF3658 /* mail_new.pdf */; };
 		1AAD503316937B4D00FF3658 /* mail.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AAD503016937B4D00FF3658 /* mail.pdf */; };
-		1AC0490416B83F5600995CEB /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC0490316B83F5600995CEB /* LaunchAtLoginController.m */; };
-		1AC0490916B83F6100995CEB /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC0490616B83F6100995CEB /* MASPreferencesWindow.xib */; };
-		1AC0490A16B83F6100995CEB /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC0490816B83F6100995CEB /* MASPreferencesWindowController.m */; };
-		1AC0490D16B83F7600995CEB /* GTMOAuth2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1AC048FF16B83F4700995CEB /* GTMOAuth2.framework */; };
-		1AC0490F16B83F9E00995CEB /* GTMOAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC048FF16B83F4700995CEB /* GTMOAuth2.framework */; };
 		1ACAF72E1693A4AE0002700B /* GNMailFetchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACAF72D1693A4AE0002700B /* GNMailFetchManager.m */; };
+		1AE7976818405F230024E2B0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE7976718405F230024E2B0 /* WebKit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1AC048FA16B83F4700995CEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC048F316B83F4700995CEB /* GTMOAuth2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = OAuthTouchStaticLib;
-		};
-		1AC048FC16B83F4700995CEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC048F316B83F4700995CEB /* GTMOAuth2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4FC754FA13E77E25006A0C26;
-			remoteInfo = OAuthTouchNonGoogleStaticLib;
-		};
-		1AC048FE16B83F4700995CEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC048F316B83F4700995CEB /* GTMOAuth2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1A158F041698EFA90092602A;
-			remoteInfo = GTMOAuth2;
-		};
-		1AC0490016B83F4700995CEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC048F316B83F4700995CEB /* GTMOAuth2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1AACFA481698F14D00F23CEC;
-			remoteInfo = GTMOAuth2NonGoogle;
-		};
-		1AC0490B16B83F6F00995CEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC048F316B83F4700995CEB /* GTMOAuth2.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A158EE71698EFA90092602A;
-			remoteInfo = GTMOAuth2;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1A398F591698FA94003CD8E6 /* CopyFiles */ = {
@@ -80,7 +39,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1AC0490D16B83F7600995CEB /* GTMOAuth2.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,15 +79,11 @@
 		1AAD502E16937B4D00FF3658 /* mail_alt.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mail_alt.pdf; sourceTree = "<group>"; };
 		1AAD502F16937B4D00FF3658 /* mail_new.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mail_new.pdf; sourceTree = "<group>"; };
 		1AAD503016937B4D00FF3658 /* mail.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mail.pdf; sourceTree = "<group>"; };
-		1AC048F316B83F4700995CEB /* GTMOAuth2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTMOAuth2.xcodeproj; path = "External Sources/GTMOAuth2/Source/GTMOAuth2.xcodeproj"; sourceTree = "<group>"; };
-		1AC0490216B83F5600995CEB /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchAtLoginController.h; path = "External Sources/LaunchAtLoginController/LaunchAtLoginController.h"; sourceTree = SOURCE_ROOT; };
-		1AC0490316B83F5600995CEB /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchAtLoginController.m; path = "External Sources/LaunchAtLoginController/LaunchAtLoginController.m"; sourceTree = SOURCE_ROOT; };
-		1AC0490516B83F6100995CEB /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesViewController.h; path = "External Sources/MASPreferences/MASPreferencesViewController.h"; sourceTree = SOURCE_ROOT; };
-		1AC0490616B83F6100995CEB /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MASPreferencesWindow.xib; path = "External Sources/MASPreferences/MASPreferencesWindow.xib"; sourceTree = SOURCE_ROOT; };
-		1AC0490716B83F6100995CEB /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesWindowController.h; path = "External Sources/MASPreferences/MASPreferencesWindowController.h"; sourceTree = SOURCE_ROOT; };
-		1AC0490816B83F6100995CEB /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASPreferencesWindowController.m; path = "External Sources/MASPreferences/MASPreferencesWindowController.m"; sourceTree = SOURCE_ROOT; };
 		1ACAF72C1693A4AE0002700B /* GNMailFetchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNMailFetchManager.h; sourceTree = "<group>"; };
 		1ACAF72D1693A4AE0002700B /* GNMailFetchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNMailFetchManager.m; sourceTree = "<group>"; };
+		1AE7976718405F230024E2B0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		903DE69CF5F645C2A264500A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B67609A5C31F4106BD784A91 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +92,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AAD501116937B1300FF3658 /* Cocoa.framework in Frameworks */,
-				1AC0490F16B83F9E00995CEB /* GTMOAuth2.framework in Frameworks */,
+				1AE7976818405F230024E2B0 /* WebKit.framework in Frameworks */,
+				0C51F03124044B94ABB53C3A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,17 +113,6 @@
 			name = Preferences;
 			sourceTree = "<group>";
 		};
-		1A403A6A16950BF60055D43B /* MASPreferences */ = {
-			isa = PBXGroup;
-			children = (
-				1AC0490516B83F6100995CEB /* MASPreferencesViewController.h */,
-				1AC0490616B83F6100995CEB /* MASPreferencesWindow.xib */,
-				1AC0490716B83F6100995CEB /* MASPreferencesWindowController.h */,
-				1AC0490816B83F6100995CEB /* MASPreferencesWindowController.m */,
-			);
-			name = MASPreferences;
-			sourceTree = "<group>";
-		};
 		1A5675CC16A316A200835D1E /* Sound */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +127,7 @@
 				1AAD501616937B1300FF3658 /* Gmail Notifier */,
 				1AAD500F16937B1300FF3658 /* Frameworks */,
 				1AAD500D16937B1300FF3658 /* Products */,
+				903DE69CF5F645C2A264500A /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,9 +142,10 @@
 		1AAD500F16937B1300FF3658 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1AC048F316B83F4700995CEB /* GTMOAuth2.xcodeproj */,
 				1AAD501016937B1300FF3658 /* Cocoa.framework */,
+				1AE7976718405F230024E2B0 /* WebKit.framework */,
 				1AAD501216937B1300FF3658 /* Other Frameworks */,
+				B67609A5C31F4106BD784A91 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,25 +208,11 @@
 			name = Graphics;
 			sourceTree = "<group>";
 		};
-		1AC048F416B83F4700995CEB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1AC048FB16B83F4700995CEB /* libOAuthTouch2.a */,
-				1AC048FD16B83F4700995CEB /* libOAuthTouch2.a */,
-				1AC048FF16B83F4700995CEB /* GTMOAuth2.framework */,
-				1AC0490116B83F4700995CEB /* GTMOAuth2NonGoogle.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		1ACAF7541693ACE10002700B /* External Sources */ = {
 			isa = PBXGroup;
 			children = (
-				1A403A6A16950BF60055D43B /* MASPreferences */,
 				1A5E8B3F16ACC91C00D47812 /* NSObject+BlockObservation.h */,
 				1A5E8B4016ACC91C00D47812 /* NSObject+BlockObservation.m */,
-				1AC0490216B83F5600995CEB /* LaunchAtLoginController.h */,
-				1AC0490316B83F5600995CEB /* LaunchAtLoginController.m */,
 			);
 			name = "External Sources";
 			sourceTree = "<group>";
@@ -292,16 +224,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AAD502A16937B1300FF3658 /* Build configuration list for PBXNativeTarget "Gmail Notifier" */;
 			buildPhases = (
+				CA27CB1F023A443F910F5D4A /* Check Pods Manifest.lock */,
 				1ACB70A3169727C80003711C /* ShellScript */,
 				1AAD500816937B1300FF3658 /* Sources */,
 				1A398F591698FA94003CD8E6 /* CopyFiles */,
 				1AAD500916937B1300FF3658 /* Frameworks */,
 				1AAD500A16937B1300FF3658 /* Resources */,
+				F2FE65A9505E41BA95C9AE36 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1AC0490C16B83F6F00995CEB /* PBXTargetDependency */,
 			);
 			name = "Gmail Notifier";
 			productName = "Gmail Notifier";
@@ -328,49 +261,12 @@
 			mainGroup = 1AAD500116937B1300FF3658;
 			productRefGroup = 1AAD500D16937B1300FF3658 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 1AC048F416B83F4700995CEB /* Products */;
-					ProjectRef = 1AC048F316B83F4700995CEB /* GTMOAuth2.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1AAD500B16937B1300FF3658 /* Gmail Notifier */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		1AC048FB16B83F4700995CEB /* libOAuthTouch2.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libOAuthTouch2.a;
-			remoteRef = 1AC048FA16B83F4700995CEB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1AC048FD16B83F4700995CEB /* libOAuthTouch2.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libOAuthTouch2.a;
-			remoteRef = 1AC048FC16B83F4700995CEB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1AC048FF16B83F4700995CEB /* GTMOAuth2.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GTMOAuth2.framework;
-			remoteRef = 1AC048FE16B83F4700995CEB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1AC0490116B83F4700995CEB /* GTMOAuth2NonGoogle.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GTMOAuth2NonGoogle.framework;
-			remoteRef = 1AC0490016B83F4700995CEB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1AAD500A16937B1300FF3658 /* Resources */ = {
@@ -388,7 +284,6 @@
 				1A192580169742BE00553108 /* MainMenu.xib in Resources */,
 				1A9192A5169938ED003096C3 /* appicon.iconset in Resources */,
 				1A5675D116A316AA00835D1E /* mail_new.aiff in Resources */,
-				1AC0490916B83F6100995CEB /* MASPreferencesWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +304,36 @@
 			shellScript = "SHORT_HASH=`git rev-parse --short HEAD`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $SHORT_HASH\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"";
 			showEnvVarsInLog = 0;
 		};
+		CA27CB1F023A443F910F5D4A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2FE65A9505E41BA95C9AE36 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -425,20 +350,10 @@
 				1A852E5F16A1DAC900D5F2E6 /* GNMailAccountManager.m in Sources */,
 				1A852E6616A1DB2800D5F2E6 /* GNUtils.m in Sources */,
 				1A5E8B4116ACC91C00D47812 /* NSObject+BlockObservation.m in Sources */,
-				1AC0490416B83F5600995CEB /* LaunchAtLoginController.m in Sources */,
-				1AC0490A16B83F6100995CEB /* MASPreferencesWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1AC0490C16B83F6F00995CEB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GTMOAuth2;
-			targetProxy = 1AC0490B16B83F6F00995CEB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1A1925781697425800553108 /* GNGeneralPreferencesViewController.xib */ = {
@@ -529,6 +444,7 @@
 		};
 		1AAD502B16937B1300FF3658 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 903DE69CF5F645C2A264500A /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -543,6 +459,7 @@
 		};
 		1AAD502C16937B1300FF3658 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 903DE69CF5F645C2A264500A /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;

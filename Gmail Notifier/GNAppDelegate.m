@@ -8,7 +8,7 @@
 
 #import "GNAppDelegate.h"
 #import "GNMailFetchManager.h"
-#import "MASPreferencesWindowController.h"
+#import <MASPreferencesWindowController.h>
 #import "GNGeneralPreferencesViewController.h"
 #import "GNAccountPreferencesViewController.h"
 #import "GNUtils.h"

@@ -1,0 +1,39 @@
+PODS:
+  - gtm-oauth2 (0.0.2):
+    - gtm-oauth2/Core
+    - GTMHTTPFetcher
+    - SBJson
+  - gtm-oauth2/Core (0.0.2):
+    - gtm-oauth2/Core/Mac
+    - gtm-oauth2/Core/Touch
+    - GTMHTTPFetcher
+    - SBJson
+  - gtm-oauth2/Core/Mac (0.0.2):
+    - GTMHTTPFetcher
+    - SBJson
+  - gtm-oauth2/Core/Touch (0.0.2):
+    - GTMHTTPFetcher
+    - SBJson
+  - GTMHTTPFetcher (0.0.1):
+    - SBJson
+  - LaunchAtLoginController (1.0.0)
+  - MASPreferences (1.0)
+  - SBJson (3.2)
+
+DEPENDENCIES:
+  - gtm-oauth2
+  - LaunchAtLoginController (from `https://raw.github.com/jashephe/LaunchAtLoginController/master/LaunchAtLoginController.podspec`)
+  - MASPreferences
+
+EXTERNAL SOURCES:
+  LaunchAtLoginController:
+    :podspec: https://raw.github.com/jashephe/LaunchAtLoginController/master/LaunchAtLoginController.podspec
+
+SPEC CHECKSUMS:
+  gtm-oauth2: 92e23fbb4ab77c4f441ffc95e2bbbf174ea589c1
+  GTMHTTPFetcher: b0af09f18ec87e7a5edeffcc8cb6449fdbf0e83f
+  LaunchAtLoginController: ebe8f91297f8bb68c1085b431308871d7b05128c
+  MASPreferences: b8c112b4b6e6cbd32b8f49d249eb152d1eeb38f8
+  SBJson: abc2bf2baef456d5dae213f9826fe2b6fdf19861
+
+COCOAPODS: 0.28.0
