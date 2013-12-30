@@ -11,16 +11,14 @@ extern NSString *const GNOAuth2ServiceAddress;
 extern NSString *const GNOAuth2Scope;
 extern NSString *const GNOAuth2KeychainItemName;
 
-#pragma mark Notifications
-extern NSString *const GNAuthDidChangeNotification;
-
 #pragma mark Keys
 extern NSString *const GNMessageURLKey;
 extern NSString *const GNMessageIDKey;
-extern NSString *const GNPrefsRefreshIntervalKey;
+extern NSString *const GNMessageFreshnessKey;
+extern NSString *const GNPrefsUpdateIntervalKey;
 extern NSString *const GNPrefsShowSnippetsKey;
-extern NSString *const GNPrefsShowUnreadCountInStatusItemKey;
-extern NSString *const GNPrefsOnlyShowNewMessagesKey;
+extern NSString *const GNPrefsShowUnreadCount;
+extern NSString *const GNPrefsMessagesSourceKey;
 
 #pragma mark Resources
 NSImage * defaultStatusIcon();

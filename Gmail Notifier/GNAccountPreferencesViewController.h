@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import <gtm-oauth2/GTMOAuth2WindowController.h>
 #import <MASPreferencesViewController.h>
 
@@ -14,6 +15,5 @@
 
 @property IBOutlet NSButton *accountButton;
 @property IBOutlet NSTextField *statusText;
-
 
 @end

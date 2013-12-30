@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2.0</string>
+	<string>2.0.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -38,9 +38,7 @@
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string>Created by James Shepherdson.</string>
-	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
+	<string>Created with ❤️ by James Shepherdson.</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>

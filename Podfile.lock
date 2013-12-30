@@ -1,39 +1,140 @@
 PODS:
-  - gtm-oauth2 (0.0.2):
+  - gtm-oauth2 (0.0.3):
     - gtm-oauth2/Core
     - GTMHTTPFetcher
-    - SBJson
-  - gtm-oauth2/Core (0.0.2):
+    - SBJson (~> 3.2)
+  - gtm-oauth2/Core (0.0.3):
     - gtm-oauth2/Core/Mac
     - gtm-oauth2/Core/Touch
     - GTMHTTPFetcher
-    - SBJson
-  - gtm-oauth2/Core/Mac (0.0.2):
+    - SBJson (~> 3.2)
+  - gtm-oauth2/Core/Mac (0.0.3):
     - GTMHTTPFetcher
-    - SBJson
-  - gtm-oauth2/Core/Touch (0.0.2):
+    - SBJson (~> 3.2)
+  - gtm-oauth2/Core/Touch (0.0.3):
     - GTMHTTPFetcher
-    - SBJson
-  - GTMHTTPFetcher (0.0.1):
-    - SBJson
+    - SBJson (~> 3.2)
+  - GTMHTTPFetcher (0.0.2):
+    - SBJson (~> 3.2)
   - LaunchAtLoginController (1.0.0)
-  - MASPreferences (1.0)
+  - libextobjc (0.3):
+    - libextobjc/EXTADT
+    - libextobjc/EXTAnnotation
+    - libextobjc/EXTAspect
+    - libextobjc/EXTBlockMethod
+    - libextobjc/EXTBlockTarget
+    - libextobjc/EXTConcreteProtocol
+    - libextobjc/EXTDispatchObject
+    - libextobjc/EXTFinalMethod
+    - libextobjc/EXTKeyPathCoding
+    - libextobjc/EXTMaybe
+    - libextobjc/EXTMixin
+    - libextobjc/EXTMultimethod
+    - libextobjc/EXTMultiObject
+    - libextobjc/EXTNil
+    - libextobjc/EXTPassthrough
+    - libextobjc/EXTPrivateMethod
+    - libextobjc/EXTProtocolCategory
+    - libextobjc/EXTSafeCategory
+    - libextobjc/EXTScope
+    - libextobjc/EXTSelectorChecking
+    - libextobjc/EXTSwizzle
+    - libextobjc/EXTSynthesize
+    - libextobjc/EXTTuple
+    - libextobjc/EXTVarargs
+    - libextobjc/NSInvocation+EXT
+    - libextobjc/NSMethodSignature+EXT
+    - libextobjc/RuntimeExtensions
+    - libextobjc/UmbrellaHeader
+  - libextobjc/EXTADT (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTAnnotation (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTAspect (0.3):
+    - libextobjc/RuntimeExtensions
+    - libffi
+  - libextobjc/EXTBlockMethod (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTBlockTarget (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTDispatchObject (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTFinalMethod (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTMaybe (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTMixin (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTMultimethod (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTMultiObject (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTPassthrough (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTPrivateMethod (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTProtocolCategory (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSwizzle (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTTuple (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTVarargs (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSInvocation+EXT (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSMethodSignature+EXT (0.3):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.3)
+  - libextobjc/UmbrellaHeader (0.3)
+  - libffi (3.0.13)
+  - MASPreferences (1.1)
+  - Reachability (3.1.1)
+  - ReactiveCocoa (2.1.9):
+    - ReactiveCocoa/Core
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/Core (2.1.9):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.1.9)
   - SBJson (3.2)
 
 DEPENDENCIES:
   - gtm-oauth2
   - LaunchAtLoginController (from `https://raw.github.com/jashephe/LaunchAtLoginController/master/LaunchAtLoginController.podspec`)
+  - libextobjc
   - MASPreferences
+  - Reachability
+  - ReactiveCocoa (from `https://raw.github.com/jashephe/Specs/ReactiveCocoa-2.1.9/ReactiveCocoa/2.1.9/ReactiveCocoa.podspec`)
 
 EXTERNAL SOURCES:
   LaunchAtLoginController:
     :podspec: https://raw.github.com/jashephe/LaunchAtLoginController/master/LaunchAtLoginController.podspec
+  ReactiveCocoa:
+    :podspec: https://raw.github.com/jashephe/Specs/ReactiveCocoa-2.1.9/ReactiveCocoa/2.1.9/ReactiveCocoa.podspec
 
 SPEC CHECKSUMS:
-  gtm-oauth2: 92e23fbb4ab77c4f441ffc95e2bbbf174ea589c1
-  GTMHTTPFetcher: b0af09f18ec87e7a5edeffcc8cb6449fdbf0e83f
+  gtm-oauth2: 6528b10a61eb9b6710f6277341e2926371a12c15
+  GTMHTTPFetcher: df09cf49e95d471d9f321a8eea3d1c22bc45547e
   LaunchAtLoginController: ebe8f91297f8bb68c1085b431308871d7b05128c
-  MASPreferences: b8c112b4b6e6cbd32b8f49d249eb152d1eeb38f8
+  libextobjc: 820a79dbbbc498611e04fffd07d2d52a5588e7ac
+  libffi: 64ef39353e747bb2b25e1026afd96a157bf9231c
+  MASPreferences: 103fda1283c701dfed5503edbe24b1ab504ed6d9
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  ReactiveCocoa: f106bd57674f392bf63846aac15326624048cfbf
   SBJson: abc2bf2baef456d5dae213f9826fe2b6fdf19861
 
-COCOAPODS: 0.28.0
+COCOAPODS: 0.29.0

@@ -7,10 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface GNAppDelegate : NSObject <NSApplicationDelegate>
 
+#pragma mark Actions
 - (void)goToInbox;
+- (void)reportIssue;
+- (void)checkForUpdate;
 - (void)showPreferences;
 - (void)showAboutPanel;
 - (void)quit;

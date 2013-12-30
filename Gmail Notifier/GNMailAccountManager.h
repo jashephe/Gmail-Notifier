@@ -7,15 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import <gtm-oauth2/GTMOAuth2WindowController.h>
 
 @interface GNMailAccountManager : NSObject
 
+/** The GTMOAuth2 authentication token to use for authorizing HTTP requests. */
+@property (strong) GTMOAuth2Authentication *authentication;
+
 + (GNMailAccountManager *)sharedAccountManager;
+
+#pragma mark Authentication Operations
 - (void)attemptMailAccountLoginWithWindow:(NSWindow *)windowOrNil;
 - (void)attemptMailAccountLogoutAndTokenRevocation;
-- (BOOL)isReady;
 
-@property GTMOAuth2Authentication *authentication;
+#pragma mark Status Signals
+- (RACSignal *)readySignal;
+- (RACSignal *)reachableSignal;
 
 @end

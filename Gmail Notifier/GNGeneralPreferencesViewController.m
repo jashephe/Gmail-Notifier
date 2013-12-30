@@ -9,10 +9,24 @@
 #import "GNGeneralPreferencesViewController.h"
 
 @interface GNGeneralPreferencesViewController ()
-
+@property (strong) NSPopover *tagHelpTextPopover;
 @end
 
 @implementation GNGeneralPreferencesViewController
+
+/** Show the popup help text for the notification source combox box. */
+- (IBAction)showTagHelpText:(NSButton *)sender {
+	if (!self.tagHelpTextPopover) {
+		self.tagHelpTextPopover = [[NSPopover alloc] init];
+		NSViewController *popoverViewController = [[NSViewController alloc] initWithNibName:nil bundle:nil];
+		popoverViewController.view = self.tagHelpTextView;
+		self.tagHelpTextPopover.contentViewController = popoverViewController;
+		self.tagHelpTextPopover.behavior = NSPopoverBehaviorTransient;
+	}
+	[self.tagHelpTextPopover showRelativeToRect:sender.frame ofView:self.view preferredEdge:NSMaxXEdge];
+}
+
+#pragma mark MASPreferencesViewController Delegate Methods
 
 - (NSString *)identifier {
 	return @"General";

@@ -11,4 +11,6 @@
 
 @interface GNGeneralPreferencesViewController : NSViewController <MASPreferencesViewController>
 
+@property (weak) IBOutlet NSView *tagHelpTextView;
+
 @end

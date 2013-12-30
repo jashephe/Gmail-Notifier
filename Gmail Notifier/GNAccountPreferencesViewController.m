@@ -8,8 +8,6 @@
 
 #import "GNAccountPreferencesViewController.h"
 #import "GNMailAccountManager.h"
-#import "GNUtils.h"
-#import "GNAPIKeys.h"
 
 @interface GNAccountPreferencesViewController ()
 
@@ -17,37 +15,44 @@
 
 @implementation GNAccountPreferencesViewController
 
-//TODO:  Allow logout and token revoke
 - (void)awakeFromNib {
-	[self respondToAccountStateChange];
+	// Bind the status text to whether or not the account manager is ready.
+	RAC(self.statusText, stringValue) = [RACSignal combineLatest:@[[[GNMailAccountManager sharedAccountManager] readySignal], [[GNMailAccountManager sharedAccountManager] reachableSignal]] reduce:^id(NSNumber *isReady, NSNumber *isReachable) {
+		if (!isReachable.boolValue) {
+			return NSLocalizedString(@"No network connection", @"Displayed in the account preference panel");
+		}
+		else if (isReady.boolValue) {
+			return NSLocalizedString(@"Logged in", @"Displayed in the account preference panel");
+		}
+		else {
+			return NSLocalizedString(@"Not logged in", @"Displayed in the account preference panel");
+		}
+	}];
 	
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(respondToAccountStateChange) name:GNAuthDidChangeNotification object:nil];
-}
-
-- (void)respondToAccountStateChange {
-	if ([[GNMailAccountManager sharedAccountManager] isReady]) {
-		self.statusText.stringValue = NSLocalizedString(@"Logged in.", @"Displayed in the account preference panel");
-		self.accountButton.title = NSLocalizedString(@"Log Out", @"Displayed on the action button in the account preference panel");
-	}
-	else {
-		self.statusText.stringValue = NSLocalizedString(@"Not logged in.", @"Displayed in the account preference panel");
-		self.accountButton.title = NSLocalizedString(@"Log In", @"Displayed on the action button in the account preference panel");
-	}
-}
-
-- (void)dealloc {
-	[[NSNotificationCenter defaultCenter] removeObserver:self];
+	// Bind the button text to whether or not the account manager is ready.
+	RAC(self.accountButton, title) = [[[GNMailAccountManager sharedAccountManager] readySignal] map:^id(NSNumber *isReady) {
+		if (isReady.boolValue) {
+			return NSLocalizedString(@"Log Out", @"Displayed on the action button in the account preference panel");
+		}
+		else {
+			return NSLocalizedString(@"Log In", @"Displayed on the action button in the account preference panel");
+		}
+	}];
+	
+	[self.accountButton rac_liftSelector:@selector(setEnabled:) withSignalsFromArray:@[[[GNMailAccountManager sharedAccountManager] reachableSignal]]];
 }
 
 #pragma mark IBActions
+
 - (IBAction)performAccountAction:(id)sender {
-	if ([[GNMailAccountManager sharedAccountManager] isReady])
+	if ([GNMailAccountManager sharedAccountManager].authentication != nil && [[GNMailAccountManager sharedAccountManager].authentication canAuthorize])
 		[[GNMailAccountManager sharedAccountManager] attemptMailAccountLogoutAndTokenRevocation];
 	else
 		[[GNMailAccountManager sharedAccountManager] attemptMailAccountLoginWithWindow:self.view.window];
 }
 
 #pragma mark MASPreferencesViewController Delegate Methods
+
 - (NSString *)identifier {
 	return @"Account";
 }

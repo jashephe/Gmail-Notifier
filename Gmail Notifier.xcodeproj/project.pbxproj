@@ -10,11 +10,10 @@
 		0C51F03124044B94ABB53C3A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B67609A5C31F4106BD784A91 /* libPods.a */; };
 		1A1925761697425800553108 /* GNGeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1925781697425800553108 /* GNGeneralPreferencesViewController.xib */; };
 		1A19257C1697426400553108 /* GNAccountPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A19257E1697426400553108 /* GNAccountPreferencesViewController.xib */; };
-		1A192580169742BE00553108 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A19257F169742BE00553108 /* MainMenu.xib */; };
 		1A1C9EE7169538B20044D4DC /* GNAccountPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C9EE5169538B20044D4DC /* GNAccountPreferencesViewController.m */; };
+		1A2A8F2F1854088600D661B0 /* GNUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2A8F2E1854088600D661B0 /* GNUIManager.m */; };
 		1A403A5D169506460055D43B /* GNGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A403A5B169506460055D43B /* GNGeneralPreferencesViewController.m */; };
 		1A5675D116A316AA00835D1E /* mail_new.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 1A5675CE16A316AA00835D1E /* mail_new.aiff */; };
-		1A5E8B4116ACC91C00D47812 /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E8B4016ACC91C00D47812 /* NSObject+BlockObservation.m */; };
 		1A64978216973EA50066CA4D /* GNAPIKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A64978116973EA50066CA4D /* GNAPIKeys.m */; };
 		1A66FC8516937EBD00A6CC02 /* mail_error.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1A66FC8416937EBD00A6CC02 /* mail_error.pdf */; };
 		1A852E5F16A1DAC900D5F2E6 /* GNMailAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A852E5E16A1DAC900D5F2E6 /* GNMailAccountManager.m */; };
@@ -47,15 +46,14 @@
 /* Begin PBXFileReference section */
 		1A1925771697425800553108 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GNGeneralPreferencesViewController.xib; sourceTree = "<group>"; };
 		1A19257D1697426400553108 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GNAccountPreferencesViewController.xib; sourceTree = "<group>"; };
-		1A19257F169742BE00553108 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		1A192581169742D600553108 /* Gmail Notifier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Gmail Notifier.entitlements"; sourceTree = "<group>"; };
 		1A1C9EE4169538B20044D4DC /* GNAccountPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNAccountPreferencesViewController.h; sourceTree = "<group>"; };
 		1A1C9EE5169538B20044D4DC /* GNAccountPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNAccountPreferencesViewController.m; sourceTree = "<group>"; };
+		1A2A8F2D1854088600D661B0 /* GNUIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNUIManager.h; sourceTree = "<group>"; };
+		1A2A8F2E1854088600D661B0 /* GNUIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNUIManager.m; sourceTree = "<group>"; };
 		1A403A5A169506460055D43B /* GNGeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNGeneralPreferencesViewController.h; sourceTree = "<group>"; };
 		1A403A5B169506460055D43B /* GNGeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNGeneralPreferencesViewController.m; sourceTree = "<group>"; };
 		1A5675CE16A316AA00835D1E /* mail_new.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = mail_new.aiff; sourceTree = "<group>"; };
-		1A5E8B3F16ACC91C00D47812 /* NSObject+BlockObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BlockObservation.h"; sourceTree = "<group>"; };
-		1A5E8B4016ACC91C00D47812 /* NSObject+BlockObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BlockObservation.m"; sourceTree = "<group>"; };
 		1A64978016973EA50066CA4D /* GNAPIKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNAPIKeys.h; sourceTree = "<group>"; };
 		1A64978116973EA50066CA4D /* GNAPIKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNAPIKeys.m; sourceTree = "<group>"; };
 		1A66FC8416937EBD00A6CC02 /* mail_error.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mail_error.pdf; sourceTree = "<group>"; };
@@ -92,8 +90,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AAD501116937B1300FF3658 /* Cocoa.framework in Frameworks */,
-				1AE7976818405F230024E2B0 /* WebKit.framework in Frameworks */,
 				0C51F03124044B94ABB53C3A /* libPods.a in Frameworks */,
+				1AE7976818405F230024E2B0 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,13 +167,13 @@
 				1A852E5E16A1DAC900D5F2E6 /* GNMailAccountManager.m */,
 				1ACAF72C1693A4AE0002700B /* GNMailFetchManager.h */,
 				1ACAF72D1693A4AE0002700B /* GNMailFetchManager.m */,
+				1A2A8F2D1854088600D661B0 /* GNUIManager.h */,
+				1A2A8F2E1854088600D661B0 /* GNUIManager.m */,
 				1A852E6416A1DB2800D5F2E6 /* GNUtils.h */,
 				1A852E6516A1DB2800D5F2E6 /* GNUtils.m */,
 				1A64978016973EA50066CA4D /* GNAPIKeys.h */,
 				1A64978116973EA50066CA4D /* GNAPIKeys.m */,
-				1A19257F169742BE00553108 /* MainMenu.xib */,
 				1A403A59169506080055D43B /* Preferences */,
-				1ACAF7541693ACE10002700B /* External Sources */,
 				1AAD501716937B1300FF3658 /* Supporting Files */,
 			);
 			path = "Gmail Notifier";
@@ -208,15 +206,6 @@
 			name = Graphics;
 			sourceTree = "<group>";
 		};
-		1ACAF7541693ACE10002700B /* External Sources */ = {
-			isa = PBXGroup;
-			children = (
-				1A5E8B3F16ACC91C00D47812 /* NSObject+BlockObservation.h */,
-				1A5E8B4016ACC91C00D47812 /* NSObject+BlockObservation.m */,
-			);
-			name = "External Sources";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,7 +214,7 @@
 			buildConfigurationList = 1AAD502A16937B1300FF3658 /* Build configuration list for PBXNativeTarget "Gmail Notifier" */;
 			buildPhases = (
 				CA27CB1F023A443F910F5D4A /* Check Pods Manifest.lock */,
-				1ACB70A3169727C80003711C /* ShellScript */,
+				1ACB70A3169727C80003711C /* Run Script */,
 				1AAD500816937B1300FF3658 /* Sources */,
 				1A398F591698FA94003CD8E6 /* CopyFiles */,
 				1AAD500916937B1300FF3658 /* Frameworks */,
@@ -281,7 +270,6 @@
 				1A66FC8516937EBD00A6CC02 /* mail_error.pdf in Resources */,
 				1A1925761697425800553108 /* GNGeneralPreferencesViewController.xib in Resources */,
 				1A19257C1697426400553108 /* GNAccountPreferencesViewController.xib in Resources */,
-				1A192580169742BE00553108 /* MainMenu.xib in Resources */,
 				1A9192A5169938ED003096C3 /* appicon.iconset in Resources */,
 				1A5675D116A316AA00835D1E /* mail_new.aiff in Resources */,
 			);
@@ -290,13 +278,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1ACB70A3169727C80003711C /* ShellScript */ = {
+		1ACB70A3169727C80003711C /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,13 +332,13 @@
 			files = (
 				1AAD501D16937B1300FF3658 /* main.m in Sources */,
 				1AAD502416937B1300FF3658 /* GNAppDelegate.m in Sources */,
-				1ACAF72E1693A4AE0002700B /* GNMailFetchManager.m in Sources */,
-				1A403A5D169506460055D43B /* GNGeneralPreferencesViewController.m in Sources */,
-				1A1C9EE7169538B20044D4DC /* GNAccountPreferencesViewController.m in Sources */,
+				1A852E6616A1DB2800D5F2E6 /* GNUtils.m in Sources */,
 				1A64978216973EA50066CA4D /* GNAPIKeys.m in Sources */,
 				1A852E5F16A1DAC900D5F2E6 /* GNMailAccountManager.m in Sources */,
-				1A852E6616A1DB2800D5F2E6 /* GNUtils.m in Sources */,
-				1A5E8B4116ACC91C00D47812 /* NSObject+BlockObservation.m in Sources */,
+				1ACAF72E1693A4AE0002700B /* GNMailFetchManager.m in Sources */,
+				1A2A8F2F1854088600D661B0 /* GNUIManager.m in Sources */,
+				1A403A5D169506460055D43B /* GNGeneralPreferencesViewController.m in Sources */,
+				1A1C9EE7169538B20044D4DC /* GNAccountPreferencesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

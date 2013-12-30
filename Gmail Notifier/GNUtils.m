@@ -13,16 +13,14 @@ NSString *const GNOAuth2ServiceAddress = @"https://mail.google.com/mail/feed/ato
 NSString *const GNOAuth2Scope = @"https://mail.google.com/mail/feed/atom/";
 NSString *const GNOAuth2KeychainItemName = @"Gmail Notifier OAuth2";
 
-#pragma mark Notifications
-NSString *const GNAuthDidChangeNotification = @"notification.authDidChange";
-
 #pragma mark Keys
 NSString *const GNMessageURLKey = @"key.messageURL";
 NSString *const GNMessageIDKey = @"key.messageID";
-NSString *const GNPrefsRefreshIntervalKey = @"prefs.refreshInterval";
+NSString *const GNMessageFreshnessKey = @"key.messageFreshness";
+NSString *const GNPrefsUpdateIntervalKey = @"prefs.refreshInterval";
 NSString *const GNPrefsShowSnippetsKey = @"prefs.showSnippets";
-NSString *const GNPrefsShowUnreadCountInStatusItemKey = @"prefs.showUnreadCount";
-NSString *const GNPrefsOnlyShowNewMessagesKey = @"prefs.onlyNewMessages";
+NSString *const GNPrefsShowUnreadCount = @"prefs.showUnreadCount";
+NSString *const GNPrefsMessagesSourceKey = @"prefs.messagesSource";
 
 #pragma mark Resources
 
