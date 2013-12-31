@@ -101,7 +101,9 @@
 				}
 				[subscriber sendCompleted];
 			}];
-			return nil;
+			return [RACDisposable disposableWithBlock:^{
+				[fetcher stopFetching];
+			}];
 		}];
 		return reponseSignal;
 	}

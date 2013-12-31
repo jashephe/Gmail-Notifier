@@ -73,7 +73,7 @@ NSString * currentTimeString() {
 	
 	// A signal (NSDate) that yields at a periodic interval, and updates to reflect the value from fetchIntervalMonitor
 	RACSignal *timedFetchInterval = [[[fetchIntervalMonitor map:^id(NSNumber *interval) {
-		return [[RACSignal interval:(interval.integerValue * 60) onScheduler:[RACScheduler mainThreadScheduler] withLeeway:0] startWith:[NSDate date]];
+		return [[RACSignal interval:(interval.integerValue * 60) onScheduler:[RACScheduler mainThreadScheduler] withLeeway:5] startWith:[NSDate date]];
 	}] takeUntil:self.rac_willDeallocSignal] switchToLatest];
 	
 	// A signal (NSDate) that yields both at a period interval described by timeFetchInterval as well as whenever manualFetchSignal is called.
@@ -85,8 +85,7 @@ NSString * currentTimeString() {
 	RACMulticastConnection *messageConnections = [[fetchInterval map:^id(id _) {
 		@strongify(self);
 		return [self.fetchManager checkForNewEmails];
-	}] multicast:[RACReplaySubject replaySubjectWithCapacity:1]];
-	[messageConnections connect];
+	}] publish];
 	RACSignal *messageSignals = messageConnections.signal;
 	
 	[messageSignals subscribeNext:^(RACSignal *messageSignal) {
@@ -158,6 +157,8 @@ NSString * currentTimeString() {
 			return fabricateTrafficLightImageOfColor([NSColor blueColor]);
 		}
 	}];
+	
+	[messageConnections connect];
 }
 
 #pragma mark Status Item
