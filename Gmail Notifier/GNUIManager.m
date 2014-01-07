@@ -77,12 +77,14 @@ NSString * currentTimeString() {
 	}] takeUntil:self.rac_willDeallocSignal] switchToLatest];
 	
 	// A signal (NSDate) that yields both at a period interval described by timeFetchInterval as well as whenever manualFetchSignal is called.
-	RACSignal *fetchInterval = [RACSignal merge:@[timedFetchInterval, self.manualFetchSignal]];
+	RACSignal *shouldFetch = [RACSignal merge:@[timedFetchInterval, self.manualFetchSignal]];
 	
 	@weakify(self);
 	
 	// A signal of signals (GNMailMessage) that yields the currently unread messages whenever requested by fetchInterval
-	RACMulticastConnection *messageConnections = [[fetchInterval map:^id(id _) {
+	// (as long as the authentication is ready and the network is reachable.
+	RACSignal *filteredShouldFetch = [RACSignal if:readyAndReachable then:shouldFetch else:[RACSignal empty]];
+	RACMulticastConnection *messageConnections = [[filteredShouldFetch map:^id(id _) {
 		@strongify(self);
 		return [self.fetchManager checkForNewEmails];
 	}] publish];
