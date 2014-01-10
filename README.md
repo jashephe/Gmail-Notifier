@@ -1,4 +1,4 @@
-Gmail-Notifier Support Files
+Gmail Notifier Support Files
 ============================
 
 Support files for use on GitHub.
