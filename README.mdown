@@ -1,4 +1,4 @@
-![Gmail Notifier Logo][logo]
+<img src="https://raw.github.com/jashephe/Gmail-Notifier/support/images/appIcon.png" alt=Preferences" width="128px">
 #Gmail Notifier
 ###[Download](https://github.com/jashephe/Gmail-Notifier/releases)
 Minimalist Gmail inbox notifications for Mac OS X.
@@ -15,17 +15,15 @@ Gmail Notifier is not a very complex project and shouldn't be too hard to build 
 ##Screenshots
 Status Menu Icon
 
-![Status Menu Icon](https://s3.amazonaws.com/Gmail-Notifier/status_menu_icon.png "Status Menu Icon")
+<img src="https://raw.github.com/jashephe/Gmail-Notifier/support/images/statusIcon.png" alt="Status Menu Icon" width="241px">
 
 Status Menu
 
-![Status Menu](https://s3.amazonaws.com/Gmail-Notifier/status_menu.png "Status Menu")
+<img src="https://raw.github.com/jashephe/Gmail-Notifier/support/images/menu.png" alt=Preferences" width="269px">
 
 Preferences
 
-![Preferences](https://s3.amazonaws.com/Gmail-Notifier/preferences.png "Preferences")
+<img src="https://raw.github.com/jashephe/Gmail-Notifier/support/images/prefs.png" alt=Preferences" width="498px">
 
 ##A Note on the Name
 Gmail Notifier is not a Google product, nor is it in any way, shape, or form endorsed or recognized as an "official" Gmail client.  The name is simply intended to make it clear what services this application is intended to work with (i.e. Google's [Gmail](http://mail.google.com/)).
-
-[logo]: https://s3.amazonaws.com/Gmail-Notifier/icon_128x128.png "Gmail Notifier"
