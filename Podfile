@@ -1,6 +1,6 @@
 platform :osx, '10.9'
 inhibit_all_warnings!
-pod 'ReactiveCocoa', :podspec => 'https://raw.github.com/jashephe/Specs/ReactiveCocoa-2.1.9/ReactiveCocoa/2.1.9/ReactiveCocoa.podspec'
+pod 'ReactiveCocoa'
 pod 'libextobjc'
 pod 'gtm-oauth2'
 pod 'Reachability'

@@ -104,12 +104,12 @@ PODS:
   - libffi (3.0.13)
   - MASPreferences (1.1)
   - Reachability (3.1.1)
-  - ReactiveCocoa (2.1.9):
+  - ReactiveCocoa (2.2):
     - ReactiveCocoa/Core
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/Core (2.1.9):
+  - ReactiveCocoa/Core (2.2):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.1.9)
+  - ReactiveCocoa/no-arc (2.2)
   - SBJson (3.2)
 
 DEPENDENCIES:
@@ -118,13 +118,11 @@ DEPENDENCIES:
   - libextobjc
   - MASPreferences
   - Reachability
-  - ReactiveCocoa (from `https://raw.github.com/jashephe/Specs/ReactiveCocoa-2.1.9/ReactiveCocoa/2.1.9/ReactiveCocoa.podspec`)
+  - ReactiveCocoa
 
 EXTERNAL SOURCES:
   LaunchAtLoginController:
     :podspec: https://raw.github.com/jashephe/LaunchAtLoginController/master/LaunchAtLoginController.podspec
-  ReactiveCocoa:
-    :podspec: https://raw.github.com/jashephe/Specs/ReactiveCocoa-2.1.9/ReactiveCocoa/2.1.9/ReactiveCocoa.podspec
 
 SPEC CHECKSUMS:
   gtm-oauth2: 6528b10a61eb9b6710f6277341e2926371a12c15
@@ -134,7 +132,7 @@ SPEC CHECKSUMS:
   libffi: 64ef39353e747bb2b25e1026afd96a157bf9231c
   MASPreferences: 103fda1283c701dfed5503edbe24b1ab504ed6d9
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
-  ReactiveCocoa: f106bd57674f392bf63846aac15326624048cfbf
+  ReactiveCocoa: 5b340678dc3168d6c9a2ca70fb83df683c08ca02
   SBJson: abc2bf2baef456d5dae213f9826fe2b6fdf19861
 
 COCOAPODS: 0.29.0
