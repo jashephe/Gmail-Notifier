@@ -40,7 +40,7 @@
 - (RACSignal *)checkForNewEmails {
 	if ([GNMailAccountManager sharedAccountManager].authentication != nil && [[GNMailAccountManager sharedAccountManager].authentication canAuthorize]) {
 		RACSignal *reponseSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-			GTMHTTPFetcher* fetcher = [GTMHTTPFetcher fetcherWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.messagesSource relativeToURL:[NSURL URLWithString:GNOAuth2ServiceAddress]]]];
+			GTMHTTPFetcher* fetcher = [GTMHTTPFetcher fetcherWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[self.messagesSource stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] relativeToURL:[NSURL URLWithString:GNOAuth2ServiceAddress]]]];
 			[fetcher setAuthorizer:[GNMailAccountManager sharedAccountManager].authentication];
 			[fetcher beginFetchWithCompletionHandler:^(NSData *data, NSError *error) {
 				if (!error) {
