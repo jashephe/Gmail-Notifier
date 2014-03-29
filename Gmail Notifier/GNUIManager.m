@@ -91,27 +91,23 @@ NSString * currentTimeString() {
 	RACSignal *messageSignals = messageConnections.signal;
 	
 	[messageSignals subscribeNext:^(RACSignal *messageSignal) {
+		NSMutableArray *messages = [[NSMutableArray alloc] init];
 		[messageSignal subscribeNext:^(GNMailMessage *aMessage) {
 			@strongify(self);
+			[messages addObject:aMessage];
 			[self sendUserNotificationForMessage:aMessage];
 		} completed:^{
 			@strongify(self);
 			[[self.statusItem.menu itemWithTag:GNUICheckHistoryItemTag] setTitle:[NSString stringWithFormat:NSLocalizedString(@"Last checked at %@", @"Status menu check history"), currentTimeString()]];
+			[self reconcileStaleNotifications:messages];
 		}];
 	}];
 	
 	// A signal (NSNumber-wrapped Integer) that yields the number of messages that are currently unread
 	RACSignal *messageCount = [messageSignals flattenMap:^RACStream *(RACSignal *messageSignal) {
-		return [[messageSignal collect] map:^id(NSArray *messages) {
+		return [[[messageSignal catchTo:[RACSignal empty]] collect] map:^id(NSArray *messages) {
 			return @(messages.count);
 		}];
-	}];
-	
-	[[messageSignals flattenMap:^RACStream *(RACSignal *messageSignal) {
-		return [messageSignal collect];
-	}] subscribeNext:^(NSArray *messages) {
-		@strongify(self);
-		[self reconcileStaleNotifications:messages];
 	}];
 	
 	// Bind the status item's title to the number of unread messages, as long as we're logged in, the network connection is good, and the user wants the count.

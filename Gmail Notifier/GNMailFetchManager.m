@@ -98,8 +98,11 @@
 						// Add the current notification to the list of potential notifications.
 						[subscriber sendNext:message];
 					}
+					[subscriber sendCompleted];
+				} else {
+					[subscriber sendError:error];
 				}
-				[subscriber sendCompleted];
+				
 			}];
 			return [RACDisposable disposableWithBlock:^{
 				[fetcher stopFetching];
@@ -118,5 +121,9 @@
 #pragma mark Mail Message Class Definition
 
 @implementation GNMailMessage
+
+- (NSString *)description {
+	return [NSString stringWithFormat:@"<%@: %p> {subject: '%@', author: '%@'}", self.className, self, self.subject, self.author];
+}
 
 @end
