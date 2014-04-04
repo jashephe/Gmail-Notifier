@@ -274,7 +274,6 @@ NSImage * fabricateTrafficLightImageOfColor(NSColor *aColor) {
 - (void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification {
 	if (notification.userInfo != nil && notification.userInfo[GNMessageURLKey] != nil)
 		[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:notification.userInfo[GNMessageURLKey]]];
-	[center removeDeliveredNotification:notification];
 }
 
 /* This makes Notification Center display notifications even the app is in the foreground. */
