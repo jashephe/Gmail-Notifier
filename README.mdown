@@ -1,5 +1,6 @@
 ##A recent change to the OAuth2 authentication mechanism for the Gmail Inbox Feed has broken Gmail Notifier's access to your inbox.
 ###This was apparently unintentional, and Google is aware of the problem and has stated that engineers are working on it, but an ETA has not been given.  There is not much that we can do, other than to wait for Google to implement a fix.  Once Google fixes the problem on their end, Gmail Notifier should begin working again immediately (no need to download a patched version or anything like that).  Sorry for the inconvenience.
+If you are interested, you can follow updates on [this issue over on StackOverflow](http://stackoverflow.com/questions/24345054/gmail-atom-feed-with-2-legged-oauth-receive-401-error).
 
 <img src="https://raw.github.com/jashephe/Gmail-Notifier/support/images/appIcon.png" alt=Preferences" width="128px">
 #Gmail Notifier
