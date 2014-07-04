@@ -1,11 +1,4 @@
-##A recent change to the OAuth2 authentication mechanism for the Gmail Inbox Feed has broken Gmail Notifier's access to your inbox.
-###This was apparently unintentional, and Google is aware of the problem and has stated that engineers are working on it, but an ETA has not been given.  There is not much that we can do, other than to wait for Google to implement a fix.  Once Google fixes the problem on their end, Gmail Notifier should begin working again immediately (no need to download a patched version or anything like that).  Sorry for the inconvenience.
-###UPDATE (25/6/14):  A Google engineer posted the following on StackOverflow:  "The fix is going through the release process, it should land to production by the end of the week."
-###UPDATE (28/6/14):  Evidence suggests that Google is currently doing a partial roll-out of the fix.  It is not immediately clear if this is account-based or region-based, but some users have already regained access.
-###UPDATE (29/6/14):  If you are interested in contributing data to help us figure out why this isn't working for some people, you can fill out [this survey](https://docs.google.com/forms/d/1gDcRb0hogmkYej2G-F_LU-a7nJ5mPae-Q1MRFTv33ZI/viewform).  Thanks!
-If you are interested, you can follow updates on [this issue over on StackOverflow](http://stackoverflow.com/questions/24345054/gmail-atom-feed-with-2-legged-oauth-receive-401-error).
-
-<img src="https://raw.github.com/jashephe/Gmail-Notifier/support/images/appIcon.png" alt=Preferences" width="128px">
+<img src="https://raw.github.com/jashephe/Gmail-Notifier/support/images/appIcon.png" alt="Gmail Notifier Icon" width="128px">
 #Gmail Notifier
 ###[Download](https://github.com/jashephe/Gmail-Notifier/releases)
 Minimalist Gmail inbox notifications for Mac OS X.
@@ -26,11 +19,11 @@ Status Menu Icon
 
 Status Menu
 
-<img src="https://raw.github.com/jashephe/Gmail-Notifier/support/images/menu.png" alt=Preferences" width="269px">
+<img src="https://raw.github.com/jashephe/Gmail-Notifier/support/images/menu.png" alt="Status Menu" width="269px">
 
 Preferences
 
-<img src="https://raw.github.com/jashephe/Gmail-Notifier/support/images/prefs.png" alt=Preferences" width="498px">
+<img src="https://raw.github.com/jashephe/Gmail-Notifier/support/images/prefs.png" alt="Preferences" width="498px">
 
 ##A Note on the Name
 Gmail Notifier is not a Google product, nor is it in any way, shape, or form endorsed or recognized as an "official" Gmail client.  The name is simply intended to make it clear what services this application is intended to work with (i.e. Google's [Gmail](http://mail.google.com/)).
