@@ -89,8 +89,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AAD501116937B1300FF3658 /* Cocoa.framework in Frameworks */,
-				0C51F03124044B94ABB53C3A /* libPods.a in Frameworks */,
 				1AE7976818405F230024E2B0 /* WebKit.framework in Frameworks */,
+				0C51F03124044B94ABB53C3A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,12 +221,12 @@
 			buildConfigurationList = 1AAD502A16937B1300FF3658 /* Build configuration list for PBXNativeTarget "Gmail Notifier" */;
 			buildPhases = (
 				CA27CB1F023A443F910F5D4A /* Check Pods Manifest.lock */,
-				1ACB70A3169727C80003711C /* Run Script */,
 				1AAD500816937B1300FF3658 /* Sources */,
 				1A398F591698FA94003CD8E6 /* CopyFiles */,
 				1AAD500916937B1300FF3658 /* Frameworks */,
 				1AAD500A16937B1300FF3658 /* Resources */,
 				F2FE65A9505E41BA95C9AE36 /* Copy Pods Resources */,
+				1ACB70A3169727C80003711C /* Run Script */,
 			);
 			buildRules = (
 			);
