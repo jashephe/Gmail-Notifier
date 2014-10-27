@@ -171,7 +171,6 @@ NSStatusItem * prepareStatusItem() {
 	NSStatusItem *item = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
 	
 	[item setImage:defaultStatusIcon()];
-	[item setAlternateImage:alternateStatusIcon()];
     [item setHighlightMode:YES];
 	
 	return item;
