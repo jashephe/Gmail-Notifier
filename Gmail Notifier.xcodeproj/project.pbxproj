@@ -24,7 +24,6 @@
 		1AAD501D16937B1300FF3658 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD501C16937B1300FF3658 /* main.m */; };
 		1AAD502116937B1300FF3658 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1AAD501F16937B1300FF3658 /* Credits.rtf */; };
 		1AAD502416937B1300FF3658 /* GNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD502316937B1300FF3658 /* GNAppDelegate.m */; };
-		1AAD503116937B4D00FF3658 /* mail_alt.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AAD502E16937B4D00FF3658 /* mail_alt.pdf */; };
 		1AAD503216937B4D00FF3658 /* mail_new.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AAD502F16937B4D00FF3658 /* mail_new.pdf */; };
 		1AAD503316937B4D00FF3658 /* mail.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AAD503016937B4D00FF3658 /* mail.pdf */; };
 		1ACAF72E1693A4AE0002700B /* GNMailFetchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACAF72D1693A4AE0002700B /* GNMailFetchManager.m */; };
@@ -74,14 +73,14 @@
 		1AAD502016937B1300FF3658 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		1AAD502216937B1300FF3658 /* GNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNAppDelegate.h; sourceTree = "<group>"; };
 		1AAD502316937B1300FF3658 /* GNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNAppDelegate.m; sourceTree = "<group>"; };
-		1AAD502E16937B4D00FF3658 /* mail_alt.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mail_alt.pdf; sourceTree = "<group>"; };
 		1AAD502F16937B4D00FF3658 /* mail_new.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mail_new.pdf; sourceTree = "<group>"; };
 		1AAD503016937B4D00FF3658 /* mail.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mail.pdf; sourceTree = "<group>"; };
 		1ACAF72C1693A4AE0002700B /* GNMailFetchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNMailFetchManager.h; sourceTree = "<group>"; };
 		1ACAF72D1693A4AE0002700B /* GNMailFetchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNMailFetchManager.m; sourceTree = "<group>"; };
 		1AE7976718405F230024E2B0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		903DE69CF5F645C2A264500A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		5DBAC1BB2A47C017B3F927D7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B67609A5C31F4106BD784A91 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C3488A49B6D1D21A3F9117 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +89,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AAD501116937B1300FF3658 /* Cocoa.framework in Frameworks */,
-				0C51F03124044B94ABB53C3A /* libPods.a in Frameworks */,
 				1AE7976818405F230024E2B0 /* WebKit.framework in Frameworks */,
+				0C51F03124044B94ABB53C3A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +124,7 @@
 				1AAD501616937B1300FF3658 /* Gmail Notifier */,
 				1AAD500F16937B1300FF3658 /* Frameworks */,
 				1AAD500D16937B1300FF3658 /* Products */,
-				903DE69CF5F645C2A264500A /* Pods.xcconfig */,
+				C32DF27C408ABD54416C0D52 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,12 +197,20 @@
 			isa = PBXGroup;
 			children = (
 				1A9192A4169938ED003096C3 /* appicon.iconset */,
-				1AAD502E16937B4D00FF3658 /* mail_alt.pdf */,
 				1AAD502F16937B4D00FF3658 /* mail_new.pdf */,
 				1AAD503016937B4D00FF3658 /* mail.pdf */,
 				1A66FC8416937EBD00A6CC02 /* mail_error.pdf */,
 			);
 			name = Graphics;
+			sourceTree = "<group>";
+		};
+		C32DF27C408ABD54416C0D52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6C3488A49B6D1D21A3F9117 /* Pods.debug.xcconfig */,
+				5DBAC1BB2A47C017B3F927D7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,12 +221,12 @@
 			buildConfigurationList = 1AAD502A16937B1300FF3658 /* Build configuration list for PBXNativeTarget "Gmail Notifier" */;
 			buildPhases = (
 				CA27CB1F023A443F910F5D4A /* Check Pods Manifest.lock */,
-				1ACB70A3169727C80003711C /* Run Script */,
 				1AAD500816937B1300FF3658 /* Sources */,
 				1A398F591698FA94003CD8E6 /* CopyFiles */,
 				1AAD500916937B1300FF3658 /* Frameworks */,
 				1AAD500A16937B1300FF3658 /* Resources */,
 				F2FE65A9505E41BA95C9AE36 /* Copy Pods Resources */,
+				1ACB70A3169727C80003711C /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -264,7 +271,6 @@
 			files = (
 				1AAD501B16937B1300FF3658 /* InfoPlist.strings in Resources */,
 				1AAD502116937B1300FF3658 /* Credits.rtf in Resources */,
-				1AAD503116937B4D00FF3658 /* mail_alt.pdf in Resources */,
 				1AAD503216937B4D00FF3658 /* mail_new.pdf in Resources */,
 				1AAD503316937B4D00FF3658 /* mail.pdf in Resources */,
 				1A66FC8516937EBD00A6CC02 /* mail_error.pdf in Resources */,
@@ -320,7 +326,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -433,7 +439,7 @@
 		};
 		1AAD502B16937B1300FF3658 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 903DE69CF5F645C2A264500A /* Pods.xcconfig */;
+			baseConfigurationReference = B6C3488A49B6D1D21A3F9117 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -448,7 +454,7 @@
 		};
 		1AAD502C16937B1300FF3658 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 903DE69CF5F645C2A264500A /* Pods.xcconfig */;
+			baseConfigurationReference = 5DBAC1BB2A47C017B3F927D7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;

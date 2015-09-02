@@ -29,18 +29,14 @@ NSString *const GNPrefsMessagesSourceKey = @"prefs.messagesSource";
 NSImage * defaultStatusIcon() {
 	NSImage *icon = [NSImage imageNamed:@"mail"];
 	[icon setSize:STATUS_ICON_IMAGE_SIZE];
-	return icon;
-}
-
-NSImage * alternateStatusIcon() {
-	NSImage *icon = [NSImage imageNamed:@"mail_alt"];
-	[icon setSize:STATUS_ICON_IMAGE_SIZE];
+	[icon setTemplate:YES];
 	return icon;
 }
 
 NSImage * attentionStatusIcon() {
 	NSImage *icon = [NSImage imageNamed:@"mail_new"];
 	[icon setSize:STATUS_ICON_IMAGE_SIZE];
+	[icon setTemplate:YES];
 	return icon;
 }
 
