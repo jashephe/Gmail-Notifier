@@ -1,0 +1,2 @@
+#Gmail Notifier Development
+This is the development branch for the version 3 rewrite of Gmail Notifier. See the master branch for more information.
