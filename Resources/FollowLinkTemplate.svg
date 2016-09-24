@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="18"
+   height="18"
+   viewBox="0 0 18 18.000001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91+devel+osxmenu r12922"
+   sodipodi:docname="FollowLinkTemplate.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="16.351927"
+     inkscape:cy="22.332434"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="982"
+     inkscape:window-x="1952"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-62.900005,-183.507)">
+    <path
+       inkscape:connector-curvature="0"
+       id="path3366"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:github-octicons;-inkscape-font-specification:'github-octicons, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 79.400005,195.507 1.5,0 0,4.5 q -0.02344,0.63282 -0.445312,1.05469 -0.421875,0.42188 -1.054688,0.44531 l -15,0 q -0.632812,-0.0234 -1.054687,-0.44531 -0.421875,-0.42187 -0.445313,-1.05469 l 0,-15 q 0.02344,-0.63281 0.445313,-1.05468 0.421875,-0.42188 1.054687,-0.44532 l 4.5,0 0,1.5 -4.5,0 0,15 15,0 0,-4.5 z m -7.5,-12 3.375,3.375 -4.875,4.875 2.25,2.25 4.875,-4.875 3.375,3.375 0,-9 -9,0 z" />
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AccountStatusMenuEntryView" customModule="Gmail_Notifier" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="aw3-O3-kky">
+                    <rect key="frame" x="57" y="23" width="85" height="19"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" title="User Name" id="Tma-Xk-tCs">
+                        <font key="font" metaFont="systemLight" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="jhg-Vs-aIm">
+                    <rect key="frame" x="255" y="13" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="TCM-O4-EjS"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="bQP-Al-HyH"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="FollowLinkTemplate" id="RBt-JV-Fvn"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="hoo-8D-nTN">
+                    <rect key="frame" x="15" y="13" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="Tap-Fj-gxB"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="Yza-mX-5m5"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="email_light" id="ZEO-GA-CCn"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Nl-EE-Hii">
+                    <rect key="frame" x="40" y="18" width="11" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="1" id="iag-d3-L4x">
+                        <font key="font" metaFont="systemSemibold" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="MTh-xM-gjB">
+                    <rect key="frame" x="57" y="9" width="141" height="14"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" title="email.address@gmail.com" id="gV0-XR-uAI">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jhg-Vs-aIm" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="1sJ-eA-KmE"/>
+                <constraint firstItem="aw3-O3-kky" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" constant="-7" id="6U4-dW-Rse"/>
+                <constraint firstItem="5Nl-EE-Hii" firstAttribute="centerY" secondItem="hoo-8D-nTN" secondAttribute="centerY" constant="-1" id="AEk-Jj-Nem"/>
+                <constraint firstItem="hoo-8D-nTN" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="CJ0-qo-Con"/>
+                <constraint firstItem="MTh-xM-gjB" firstAttribute="leading" secondItem="5Nl-EE-Hii" secondAttribute="trailing" constant="10" id="IXY-3A-6xf"/>
+                <constraint firstItem="aw3-O3-kky" firstAttribute="leading" secondItem="MTh-xM-gjB" secondAttribute="leading" id="UWT-tU-ahR"/>
+                <constraint firstItem="jhg-Vs-aIm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MTh-xM-gjB" secondAttribute="trailing" constant="10" id="ZTR-1L-38z"/>
+                <constraint firstItem="aw3-O3-kky" firstAttribute="leading" secondItem="5Nl-EE-Hii" secondAttribute="trailing" constant="10" id="d4z-2D-eXT"/>
+                <constraint firstItem="5Nl-EE-Hii" firstAttribute="leading" secondItem="hoo-8D-nTN" secondAttribute="trailing" constant="2" id="gSp-CE-quK"/>
+                <constraint firstItem="MTh-xM-gjB" firstAttribute="top" secondItem="aw3-O3-kky" secondAttribute="bottom" id="plC-DG-3tu"/>
+                <constraint firstItem="jhg-Vs-aIm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aw3-O3-kky" secondAttribute="trailing" constant="10" id="qxo-XD-Mhl"/>
+                <constraint firstItem="hoo-8D-nTN" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="15" id="ty6-RE-DN7"/>
+                <constraint firstAttribute="trailing" secondItem="jhg-Vs-aIm" secondAttribute="trailing" constant="20" id="wwG-HV-r1Z"/>
+            </constraints>
+            <point key="canvasLocation" x="580" y="405"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="FollowLinkTemplate" width="14" height="14"/>
+        <image name="email_light" width="18" height="18"/>
+    </resources>
+</document>

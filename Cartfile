@@ -1,0 +1,3 @@
+github "ReactiveCocoa/ReactiveCocoa" ~> 4.0
+github "SwiftyJSON/SwiftyJSON" ~> 2.0
+github "ashleymills/Reachability.swift" ~> 2.0

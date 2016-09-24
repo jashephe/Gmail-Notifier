@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0321A11C29FFB800029583 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0321A01C29FFB800029583 /* AppDelegate.swift */; };
+		1A0321A31C29FFB800029583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0321A21C29FFB800029583 /* Assets.xcassets */; };
+		1A0321A61C29FFB800029583 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0321A41C29FFB800029583 /* MainMenu.xib */; };
+		1A0394BD1C4B205900C49313 /* MenuUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0394BC1C4B205900C49313 /* MenuUIManager.swift */; };
+		1A1170261C5816230092517E /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1170251C5816230092517E /* Reachability.framework */; };
+		1A1170271C58162F0092517E /* Reachability.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1A1170251C5816230092517E /* Reachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A297BD51C2C83600074F645 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A297BD41C2C83600074F645 /* AccountManager.swift */; };
+		1A297BD71C2C8BC70074F645 /* AccountCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A297BD61C2C8BC70074F645 /* AccountCellView.swift */; };
+		1A2F4E671C447EB90041B9EA /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F4E661C447EB90041B9EA /* Defaults.swift */; };
+		1A6FE4BE1C3A2A6200CE9963 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6FE4BD1C3A2A6200CE9963 /* Message.swift */; };
+		1A7CA25C1C2B0C6E008737BB /* GeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7CA25A1C2B0C6E008737BB /* GeneralPreferencesViewController.swift */; };
+		1A7CA25D1C2B0C6E008737BB /* GeneralPreferencesPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A7CA25B1C2B0C6E008737BB /* GeneralPreferencesPane.xib */; };
+		1A7CA2601C2B0D2A008737BB /* AccountsPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7CA25E1C2B0D2A008737BB /* AccountsPreferencesViewController.swift */; };
+		1A7CA2631C2B10C7008737BB /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7CA2621C2B10C7008737BB /* PreferencesWindowController.swift */; };
+		1A7FEBCF1C3609500085C0C4 /* MultiTaskStatusIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FEBCE1C3609500085C0C4 /* MultiTaskStatusIndicator.swift */; };
+		1A837E061C3B7E56004376EF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A837E051C3B7E56004376EF /* SwiftyJSON.framework */; };
+		1A837E071C3B7E68004376EF /* SwiftyJSON.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1A837E051C3B7E56004376EF /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A901F3C1C2A003A00D08197 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A901F391C2A003A00D08197 /* ReactiveCocoa.framework */; };
+		1A901F3D1C2A003A00D08197 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A901F3A1C2A003A00D08197 /* Result.framework */; };
+		1A901F401C2A004D00D08197 /* ReactiveCocoa.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1A901F391C2A003A00D08197 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A901F411C2A004D00D08197 /* Result.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1A901F3A1C2A003A00D08197 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A901F461C2A018000D08197 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A901F451C2A018000D08197 /* Account.swift */; };
+		1A901F481C2A02B900D08197 /* GoogleParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A901F471C2A02B900D08197 /* GoogleParameters.swift */; };
+		1A901F4A1C2A031E00D08197 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A901F491C2A031E00D08197 /* Credentials.swift */; };
+		1A901F4C1C2A03B300D08197 /* KeychainUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A901F4B1C2A03B300D08197 /* KeychainUtilities.swift */; };
+		1A951EAA1C4877CD002676B4 /* OAuth2Authorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A951EA91C4877CD002676B4 /* OAuth2Authorizer.swift */; };
+		1AA1204E1C30A2E600445B00 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1204D1C30A2E600445B00 /* Utilities.swift */; };
+		1AA5410B1D7533640074BCD0 /* NetworkMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA5410A1D7533640074BCD0 /* NetworkMonitoring.swift */; };
+		1AB14EC31C34D9E1009847C6 /* AccountsPreferencesPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB14EC51C34D9E1009847C6 /* AccountsPreferencesPane.xib */; };
+		1AB14EC91C34DFE3009847C6 /* GmailParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB14EC81C34DFE3009847C6 /* GmailParameters.swift */; };
+		1AB173101C2F7BEC00D5B62A /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1730F1C2F7BEC00D5B62A /* Errors.swift */; };
+		1AC866161C4C349C005F52F2 /* new_mail.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 1AC866151C4C349C005F52F2 /* new_mail.aiff */; };
+		1AE761861C4C244E009CE5A3 /* UserNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE761851C4C244E009CE5A3 /* UserNotificationManager.swift */; };
+		1AF609301D879868002693FA /* AccountStatusMenuEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6092E1D879868002693FA /* AccountStatusMenuEntryViewController.swift */; };
+		1AF609311D879868002693FA /* AccountStatusMenuEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF6092F1D879868002693FA /* AccountStatusMenuEntryViewController.xib */; };
+		1AF7E11E1D84FA7F00B47895 /* AccountStatusMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7E11C1D84FA7F00B47895 /* AccountStatusMenuViewController.swift */; };
+		1AF7E11F1D84FA7F00B47895 /* AccountStatusMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7E11D1D84FA7F00B47895 /* AccountStatusMenuViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A304A991C3452C30001F25D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A901F3E1C2A004300D08197 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A1170271C58162F0092517E /* Reachability.framework in Copy Files */,
+				1A837E071C3B7E68004376EF /* SwiftyJSON.framework in Copy Files */,
+				1A901F401C2A004D00D08197 /* ReactiveCocoa.framework in Copy Files */,
+				1A901F411C2A004D00D08197 /* Result.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A03219D1C29FFB800029583 /* Gmail Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gmail Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0321A01C29FFB800029583 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A0321A21C29FFB800029583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A0321A51C29FFB800029583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1A0321A71C29FFB800029583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0394BC1C4B205900C49313 /* MenuUIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuUIManager.swift; sourceTree = "<group>"; };
+		1A1170251C5816230092517E /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = Carthage/Build/Mac/Reachability.framework; sourceTree = SOURCE_ROOT; };
+		1A297BD41C2C83600074F645 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		1A297BD61C2C8BC70074F645 /* AccountCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCellView.swift; sourceTree = "<group>"; };
+		1A2F4E661C447EB90041B9EA /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		1A304A851C3452C30001F25D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		1A6FE4BD1C3A2A6200CE9963 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		1A7CA25A1C2B0C6E008737BB /* GeneralPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
+		1A7CA25B1C2B0C6E008737BB /* GeneralPreferencesPane.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneralPreferencesPane.xib; sourceTree = "<group>"; };
+		1A7CA25E1C2B0D2A008737BB /* AccountsPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsPreferencesViewController.swift; sourceTree = "<group>"; };
+		1A7CA2621C2B10C7008737BB /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		1A7FEBCE1C3609500085C0C4 /* MultiTaskStatusIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiTaskStatusIndicator.swift; sourceTree = "<group>"; };
+		1A837E051C3B7E56004376EF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
+		1A901F391C2A003A00D08197 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = ../Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		1A901F3A1C2A003A00D08197 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ../Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		1A901F421C2A00ED00D08197 /* Gmail Notifier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Gmail Notifier.entitlements"; sourceTree = "<group>"; };
+		1A901F451C2A018000D08197 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		1A901F471C2A02B900D08197 /* GoogleParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleParameters.swift; sourceTree = "<group>"; };
+		1A901F491C2A031E00D08197 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		1A901F4B1C2A03B300D08197 /* KeychainUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainUtilities.swift; sourceTree = "<group>"; };
+		1A951EA91C4877CD002676B4 /* OAuth2Authorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2Authorizer.swift; sourceTree = "<group>"; };
+		1AA1204D1C30A2E600445B00 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		1AA5410A1D7533640074BCD0 /* NetworkMonitoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMonitoring.swift; sourceTree = "<group>"; };
+		1AB14EC41C34D9E1009847C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AccountsPreferencesPane.xib; sourceTree = "<group>"; };
+		1AB14EC81C34DFE3009847C6 /* GmailParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailParameters.swift; sourceTree = "<group>"; };
+		1AB1730F1C2F7BEC00D5B62A /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		1AC866151C4C349C005F52F2 /* new_mail.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = new_mail.aiff; sourceTree = "<group>"; };
+		1AE761851C4C244E009CE5A3 /* UserNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNotificationManager.swift; sourceTree = "<group>"; };
+		1AF6092E1D879868002693FA /* AccountStatusMenuEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountStatusMenuEntryViewController.swift; sourceTree = "<group>"; };
+		1AF6092F1D879868002693FA /* AccountStatusMenuEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountStatusMenuEntryViewController.xib; sourceTree = "<group>"; };
+		1AF7E11C1D84FA7F00B47895 /* AccountStatusMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountStatusMenuViewController.swift; sourceTree = "<group>"; };
+		1AF7E11D1D84FA7F00B47895 /* AccountStatusMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountStatusMenuViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A03219A1C29FFB800029583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1170261C5816230092517E /* Reachability.framework in Frameworks */,
+				1A837E061C3B7E56004376EF /* SwiftyJSON.framework in Frameworks */,
+				1A901F3C1C2A003A00D08197 /* ReactiveCocoa.framework in Frameworks */,
+				1A901F3D1C2A003A00D08197 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0321941C29FFB800029583 = {
+			isa = PBXGroup;
+			children = (
+				1A03219F1C29FFB800029583 /* Gmail Notifier */,
+				1A901F441C2A013700D08197 /* Frameworks */,
+				1A03219E1C29FFB800029583 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A03219E1C29FFB800029583 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A03219D1C29FFB800029583 /* Gmail Notifier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A03219F1C29FFB800029583 /* Gmail Notifier */ = {
+			isa = PBXGroup;
+			children = (
+				1A0321A01C29FFB800029583 /* AppDelegate.swift */,
+				1A0321A41C29FFB800029583 /* MainMenu.xib */,
+				1AFEFBC51C5AF0C6000D29E7 /* Account Handling */,
+				1AFEFBC61C5AF0DB000D29E7 /* Account Responders */,
+				1A7CA2591C2B0C38008737BB /* Preference Panels */,
+				1A901F4D1C2A043A00D08197 /* Utilities */,
+				1A7FEBD01C3609570085C0C4 /* Interface */,
+				1A901F431C2A012D00D08197 /* Supporting Files */,
+			);
+			path = "Gmail Notifier";
+			sourceTree = "<group>";
+		};
+		1A45FD3F1C3F753A00C09364 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1A0321A21C29FFB800029583 /* Assets.xcassets */,
+				1AC866151C4C349C005F52F2 /* new_mail.aiff */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		1A7CA2591C2B0C38008737BB /* Preference Panels */ = {
+			isa = PBXGroup;
+			children = (
+				1A7CA2621C2B10C7008737BB /* PreferencesWindowController.swift */,
+				1A7CA25A1C2B0C6E008737BB /* GeneralPreferencesViewController.swift */,
+				1A7CA25B1C2B0C6E008737BB /* GeneralPreferencesPane.xib */,
+				1A7CA25E1C2B0D2A008737BB /* AccountsPreferencesViewController.swift */,
+				1A297BD61C2C8BC70074F645 /* AccountCellView.swift */,
+				1AB14EC51C34D9E1009847C6 /* AccountsPreferencesPane.xib */,
+			);
+			name = "Preference Panels";
+			sourceTree = "<group>";
+		};
+		1A7FEBD01C3609570085C0C4 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				1A7FEBCE1C3609500085C0C4 /* MultiTaskStatusIndicator.swift */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		1A901F431C2A012D00D08197 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A901F421C2A00ED00D08197 /* Gmail Notifier.entitlements */,
+				1A45FD3F1C3F753A00C09364 /* Assets */,
+				1A0321A71C29FFB800029583 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A901F441C2A013700D08197 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A1170251C5816230092517E /* Reachability.framework */,
+				1A304A851C3452C30001F25D /* NotificationCenter.framework */,
+				1A901F391C2A003A00D08197 /* ReactiveCocoa.framework */,
+				1A837E051C3B7E56004376EF /* SwiftyJSON.framework */,
+				1A901F3A1C2A003A00D08197 /* Result.framework */,
+			);
+			name = Frameworks;
+			path = "Gmail Notifier";
+			sourceTree = "<group>";
+		};
+		1A901F4D1C2A043A00D08197 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1AB1730F1C2F7BEC00D5B62A /* Errors.swift */,
+				1AA1204D1C30A2E600445B00 /* Utilities.swift */,
+				1A2F4E661C447EB90041B9EA /* Defaults.swift */,
+				1AA5410A1D7533640074BCD0 /* NetworkMonitoring.swift */,
+				1A901F4B1C2A03B300D08197 /* KeychainUtilities.swift */,
+				1A901F471C2A02B900D08197 /* GoogleParameters.swift */,
+				1AB14EC81C34DFE3009847C6 /* GmailParameters.swift */,
+				1A901F491C2A031E00D08197 /* Credentials.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		1AFEFBC51C5AF0C6000D29E7 /* Account Handling */ = {
+			isa = PBXGroup;
+			children = (
+				1A297BD41C2C83600074F645 /* AccountManager.swift */,
+				1A901F451C2A018000D08197 /* Account.swift */,
+				1A951EA91C4877CD002676B4 /* OAuth2Authorizer.swift */,
+				1A6FE4BD1C3A2A6200CE9963 /* Message.swift */,
+			);
+			name = "Account Handling";
+			sourceTree = "<group>";
+		};
+		1AFEFBC61C5AF0DB000D29E7 /* Account Responders */ = {
+			isa = PBXGroup;
+			children = (
+				1A0394BC1C4B205900C49313 /* MenuUIManager.swift */,
+				1AF7E11C1D84FA7F00B47895 /* AccountStatusMenuViewController.swift */,
+				1AF7E11D1D84FA7F00B47895 /* AccountStatusMenuViewController.xib */,
+				1AF6092E1D879868002693FA /* AccountStatusMenuEntryViewController.swift */,
+				1AF6092F1D879868002693FA /* AccountStatusMenuEntryViewController.xib */,
+				1AE761851C4C244E009CE5A3 /* UserNotificationManager.swift */,
+			);
+			name = "Account Responders";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A03219C1C29FFB800029583 /* Gmail Notifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0321AA1C29FFB800029583 /* Build configuration list for PBXNativeTarget "Gmail Notifier" */;
+			buildPhases = (
+				1A0321991C29FFB800029583 /* Sources */,
+				1A03219A1C29FFB800029583 /* Frameworks */,
+				1A03219B1C29FFB800029583 /* Resources */,
+				1A901F3E1C2A004300D08197 /* Copy Files */,
+				1A304A991C3452C30001F25D /* Embed App Extensions */,
+				1A1FF07A1C42CF820012DBE7 /* Set CFBundleVersion */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gmail Notifier";
+			productName = "Gmail Notifier";
+			productReference = 1A03219D1C29FFB800029583 /* Gmail Notifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A0321951C29FFB800029583 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "James Shepherdson";
+				TargetAttributes = {
+					1A03219C1C29FFB800029583 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 1A0321981C29FFB800029583 /* Build configuration list for PBXProject "Gmail Notifier" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A0321941C29FFB800029583;
+			productRefGroup = 1A03219E1C29FFB800029583 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A03219C1C29FFB800029583 /* Gmail Notifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A03219B1C29FFB800029583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC866161C4C349C005F52F2 /* new_mail.aiff in Resources */,
+				1A0321A61C29FFB800029583 /* MainMenu.xib in Resources */,
+				1A0321A31C29FFB800029583 /* Assets.xcassets in Resources */,
+				1AF609311D879868002693FA /* AccountStatusMenuEntryViewController.xib in Resources */,
+				1AF7E11F1D84FA7F00B47895 /* AccountStatusMenuViewController.xib in Resources */,
+				1A7CA25D1C2B0C6E008737BB /* GeneralPreferencesPane.xib in Resources */,
+				1AB14EC31C34D9E1009847C6 /* AccountsPreferencesPane.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A1FF07A1C42CF820012DBE7 /* Set CFBundleVersion */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set CFBundleVersion";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#SHORT_HASH=`git rev-parse --short HEAD`\nSHORT_HASH=\"NOT IN GIT\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $SHORT_HASH\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0321991C29FFB800029583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF609301D879868002693FA /* AccountStatusMenuEntryViewController.swift in Sources */,
+				1A297BD71C2C8BC70074F645 /* AccountCellView.swift in Sources */,
+				1A951EAA1C4877CD002676B4 /* OAuth2Authorizer.swift in Sources */,
+				1AB14EC91C34DFE3009847C6 /* GmailParameters.swift in Sources */,
+				1A7FEBCF1C3609500085C0C4 /* MultiTaskStatusIndicator.swift in Sources */,
+				1AE761861C4C244E009CE5A3 /* UserNotificationManager.swift in Sources */,
+				1A0394BD1C4B205900C49313 /* MenuUIManager.swift in Sources */,
+				1A901F481C2A02B900D08197 /* GoogleParameters.swift in Sources */,
+				1A7CA2601C2B0D2A008737BB /* AccountsPreferencesViewController.swift in Sources */,
+				1AB173101C2F7BEC00D5B62A /* Errors.swift in Sources */,
+				1AA1204E1C30A2E600445B00 /* Utilities.swift in Sources */,
+				1A0321A11C29FFB800029583 /* AppDelegate.swift in Sources */,
+				1A901F4C1C2A03B300D08197 /* KeychainUtilities.swift in Sources */,
+				1A901F4A1C2A031E00D08197 /* Credentials.swift in Sources */,
+				1A2F4E671C447EB90041B9EA /* Defaults.swift in Sources */,
+				1A297BD51C2C83600074F645 /* AccountManager.swift in Sources */,
+				1A7CA25C1C2B0C6E008737BB /* GeneralPreferencesViewController.swift in Sources */,
+				1A6FE4BE1C3A2A6200CE9963 /* Message.swift in Sources */,
+				1A7CA2631C2B10C7008737BB /* PreferencesWindowController.swift in Sources */,
+				1AA5410B1D7533640074BCD0 /* NetworkMonitoring.swift in Sources */,
+				1AF7E11E1D84FA7F00B47895 /* AccountStatusMenuViewController.swift in Sources */,
+				1A901F461C2A018000D08197 /* Account.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A0321A41C29FFB800029583 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A0321A51C29FFB800029583 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1AB14EC51C34D9E1009847C6 /* AccountsPreferencesPane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AB14EC41C34D9E1009847C6 /* Base */,
+			);
+			name = AccountsPreferencesPane.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A0321A81C29FFB800029583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A0321A91C29FFB800029583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		1A0321AB1C29FFB800029583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Gmail Notifier/Gmail Notifier.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "Gmail Notifier/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.jashephe.Gmail-Notifier";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1A0321AC1C29FFB800029583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Gmail Notifier/Gmail Notifier.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "Gmail Notifier/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.jashephe.Gmail-Notifier";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0321981C29FFB800029583 /* Build configuration list for PBXProject "Gmail Notifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0321A81C29FFB800029583 /* Debug */,
+				1A0321A91C29FFB800029583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0321AA1C29FFB800029583 /* Build configuration list for PBXNativeTarget "Gmail Notifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0321AB1C29FFB800029583 /* Debug */,
+				1A0321AC1C29FFB800029583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A0321951C29FFB800029583 /* Project object */;
+}
