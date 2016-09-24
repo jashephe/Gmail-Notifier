@@ -3,6 +3,22 @@
 ###[Download](https://github.com/jashephe/Gmail-Notifier/releases)
 Minimalist Gmail inbox notifications for Mac OS X.
 
+##Development Update
+There hasn't been much activity here recently, but about 9 months ago, I started work on v3, a ground-up rewrite of Gmail Notifier in the Swift programming language.
+
+Check out the [devel branch](https://github.com/jashephe/Gmail-Notifier/tree/devel) to see current progress. Note that as of September 2016, the devel branch is not yet even in an alpha state, and should largely be considered unusable (actually, it mostly works, but data persistence across application restarts is still in-progress, which is a fairly critical feature). **Still, if you have any suggestions or feature requests, consider [opening an issue](https://github.com/jashephe/Gmail-Notifier/issues/new).**
+
+###Core targets of v3 include:
+
+- [ ] Usage of the Gmail API — Previous versions of Gmail Notifier used the Gmail Inbox feed, which is easy to parse but limited in flexibility. The usage of the Gmail API will lay the foundation for future features that involve more fine-grained mailbox access, such as label and folder information.
+- [ ] Multi-account support — This was highly requested, but involved writing a custom OAuth2 implementation and restructuring how account information is stored.
+
+###Additional targets include:
+
+- [ ] Update checking — Ideally, this will provide notifications when a new version has been released. Auto-downloading of updates still remains unlikely, because doing so with existing tools (i.e. Sparkle) requires non-GitHub infrastructure. Furthermore, auto-downloading carries with it certain security concerns that must be addressed with care and are largely beyond the scope of my ambitions for this project.
+- [ ] Notification Center "Today" Widget — This was initially targeted for the v3 release, but will probably be pushed back to a feature release in v3.1. The idea is to create a widget for the Notification Center's "Today" view rather than keeping a persistent list of notifications, which is sort of a misuse of the Notification Center. 
+
+
 ##What Gmail Notifier is
 Gmail Notifier is designed to replace [Google's Mac Notifier](http://toolbar.google.com/gmail-helper/notifier_mac.html).  It offers such improvements as Notification Center integration and OAuth2 authentication (which is nice as a general rule, but particularly so if you use 2-Factor Authentication, which you probably should).  It should currently be able to give you notifications of new messages pretty consistently, but has not been thoroughly tested, so please [file an issue](https://github.com/jashephe/Gmail-Notifier/issues) if you run across a bug.
 
