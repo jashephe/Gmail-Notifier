@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
-#import <gtm-oauth2/GTMOAuth2WindowController.h>
+#import <GTMOAuth2WindowController.h>
 
 @interface GNMailAccountManager : NSObject
 

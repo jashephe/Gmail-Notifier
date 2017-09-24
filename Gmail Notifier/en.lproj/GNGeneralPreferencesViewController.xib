@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <deployment version="1070" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="GNGeneralPreferencesViewController">
@@ -12,12 +13,12 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="1" userLabel="Preference View">
             <rect key="frame" x="0.0" y="0.0" width="384" height="196"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField verticalHuggingPriority="750" id="3">
+                <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="3">
                     <rect key="frame" x="17" y="149" width="107" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Update Interval" id="4">
@@ -26,7 +27,7 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" id="21">
+                <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="21">
                     <rect key="frame" x="178" y="146" width="40" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="22">
@@ -51,7 +52,7 @@
                         <action selector="takeIntegerValueFrom:" target="21" id="Mfy-s2-nX2"/>
                     </connections>
                 </stepper>
-                <textField verticalHuggingPriority="750" id="29">
+                <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="29">
                     <rect key="frame" x="244" y="149" width="68" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="minute(s)." id="30">
@@ -60,7 +61,7 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" id="31">
+                <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="31">
                     <rect key="frame" x="135" y="149" width="38" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Every" id="32">
@@ -69,14 +70,11 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <box autoresizesSubviews="NO" horizontalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="33">
+                <box horizontalHuggingPriority="750" boxType="separator" id="33">
                     <rect key="frame" x="127" y="20" width="5" height="156"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <font key="titleFont" metaFont="system"/>
                 </box>
-                <textField verticalHuggingPriority="750" id="34">
+                <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="34">
                     <rect key="frame" x="35" y="113" width="89" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Notifications" id="35">
@@ -118,7 +116,7 @@
                         <binding destination="51" name="value" keyPath="values.prefs.showUnreadCount" id="O12-9o-bof"/>
                     </connections>
                 </button>
-                <textField verticalHuggingPriority="750" id="71">
+                <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="71">
                     <rect key="frame" x="61" y="38" width="63" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Behavior" id="72">
@@ -127,7 +125,7 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="AJK-JL-1Ic">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="AJK-JL-1Ic">
                     <rect key="frame" x="136" y="113" width="37" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="From" id="HQs-fh-7uC">
@@ -136,7 +134,7 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <comboBox verticalHuggingPriority="750" id="tuw-5t-0Il">
+                <comboBox verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="tuw-5t-0Il">
                     <rect key="frame" x="178" y="108" width="155" height="26"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="" drawsBackground="YES" numberOfVisibleItems="5" id="ymg-R6-Cbn">
@@ -169,20 +167,16 @@
                 </button>
             </subviews>
         </customView>
-        <numberFormatter formatterBehavior="default10_4" positiveFormat="#" negativeFormat="#" localizesFormat="NO" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" minimumFractionDigits="0" maximumFractionDigits="0" id="23">
-            <real key="roundingIncrement" value="0.0"/>
+        <numberFormatter formatterBehavior="default10_4" positiveFormat="#" negativeFormat="#" localizesFormat="NO" usesGroupingSeparator="NO" paddingCharacter="*" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" decimalSeparator="." groupingSeparator="," currencyDecimalSeparator="." plusSign="+" minusSign="-" notANumberSymbol="NaN" perMillSymbol="‰" percentSymbol="%" exponentSymbol="E" positivePrefix="" positiveSuffix="" negativePrefix="-" negativeSuffix="" id="23">
             <real key="minimum" value="1"/>
             <integer key="maximum" value="720"/>
-            <metadata>
-                <bool key="localizesFormat" value="NO"/>
-            </metadata>
         </numberFormatter>
         <userDefaultsController representsSharedInstance="YES" id="51"/>
         <customView id="Anx-1U-YpT" userLabel="Help Label View">
             <rect key="frame" x="0.0" y="0.0" width="195" height="136"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="z2N-TV-C0y">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="NO" id="z2N-TV-C0y">
                     <rect key="frame" x="3" y="5" width="189" height="112"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="justified" id="wQp-vs-WQc">
@@ -192,7 +186,7 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="oQM-0i-JQz">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="oQM-0i-JQz">
                     <rect key="frame" x="3" y="117" width="142" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Notification Source Help" id="cm8-gG-bA7">

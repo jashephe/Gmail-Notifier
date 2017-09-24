@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
-#import <gtm-oauth2/GTMOAuth2WindowController.h>
+#import <GTMOAuth2WindowController.h>
 #import <MASPreferencesViewController.h>
 
 @interface GNAccountPreferencesViewController : NSViewController <MASPreferencesViewController>

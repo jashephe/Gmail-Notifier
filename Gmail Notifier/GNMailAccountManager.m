@@ -40,7 +40,7 @@ static GNMailAccountManager *sharedAccountManager = nil;
 	[windowController signInSheetModalForWindow:windowOrNil completionHandler:^(GTMOAuth2Authentication *anAuthentication, NSError *anError) {
 		@strongify(self);
 		if (anError != nil) {
-			if (anError.code == kGTMOAuth2ErrorAuthorizationFailed) {
+			if (anError.code == GTMOAuth2ErrorAuthorizationFailed) {
 				NSAlert *alert = [NSAlert alertWithMessageText:NSLocalizedString(@"Access Authorization Failed", @"Showed in error message")
 										defaultButton:NSLocalizedString(@"Okay", @"Showed in error message")
 									  alternateButton:nil
