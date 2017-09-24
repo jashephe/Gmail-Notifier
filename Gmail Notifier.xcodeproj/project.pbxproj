@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C51F03124044B94ABB53C3A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B67609A5C31F4106BD784A91 /* libPods.a */; };
+		0CD66DEE5AAA4CD03A7FC91B /* libPods-Gmail Notifier.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C6CA2419C58D1B9CE3164E /* libPods-Gmail Notifier.a */; };
 		1A1925761697425800553108 /* GNGeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1925781697425800553108 /* GNGeneralPreferencesViewController.xib */; };
 		1A19257C1697426400553108 /* GNAccountPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A19257E1697426400553108 /* GNAccountPreferencesViewController.xib */; };
 		1A1C9EE7169538B20044D4DC /* GNAccountPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C9EE5169538B20044D4DC /* GNAccountPreferencesViewController.m */; };
@@ -78,9 +78,9 @@
 		1ACAF72C1693A4AE0002700B /* GNMailFetchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNMailFetchManager.h; sourceTree = "<group>"; };
 		1ACAF72D1693A4AE0002700B /* GNMailFetchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNMailFetchManager.m; sourceTree = "<group>"; };
 		1AE7976718405F230024E2B0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		5DBAC1BB2A47C017B3F927D7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		B67609A5C31F4106BD784A91 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6C3488A49B6D1D21A3F9117 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		69FDC68712E24877CC339650 /* Pods-Gmail Notifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gmail Notifier.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gmail Notifier/Pods-Gmail Notifier.release.xcconfig"; sourceTree = "<group>"; };
+		71935D840F829CD64B316DFD /* Pods-Gmail Notifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gmail Notifier.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gmail Notifier/Pods-Gmail Notifier.debug.xcconfig"; sourceTree = "<group>"; };
+		C7C6CA2419C58D1B9CE3164E /* libPods-Gmail Notifier.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gmail Notifier.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,13 +90,22 @@
 			files = (
 				1AAD501116937B1300FF3658 /* Cocoa.framework in Frameworks */,
 				1AE7976818405F230024E2B0 /* WebKit.framework in Frameworks */,
-				0C51F03124044B94ABB53C3A /* libPods.a in Frameworks */,
+				0CD66DEE5AAA4CD03A7FC91B /* libPods-Gmail Notifier.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19C2E9DCF6C80EDE33BB8A6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71935D840F829CD64B316DFD /* Pods-Gmail Notifier.debug.xcconfig */,
+				69FDC68712E24877CC339650 /* Pods-Gmail Notifier.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1A403A59169506080055D43B /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +133,7 @@
 				1AAD501616937B1300FF3658 /* Gmail Notifier */,
 				1AAD500F16937B1300FF3658 /* Frameworks */,
 				1AAD500D16937B1300FF3658 /* Products */,
-				C32DF27C408ABD54416C0D52 /* Pods */,
+				19C2E9DCF6C80EDE33BB8A6F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,7 +151,7 @@
 				1AAD501016937B1300FF3658 /* Cocoa.framework */,
 				1AE7976718405F230024E2B0 /* WebKit.framework */,
 				1AAD501216937B1300FF3658 /* Other Frameworks */,
-				B67609A5C31F4106BD784A91 /* libPods.a */,
+				C7C6CA2419C58D1B9CE3164E /* libPods-Gmail Notifier.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,15 +213,6 @@
 			name = Graphics;
 			sourceTree = "<group>";
 		};
-		C32DF27C408ABD54416C0D52 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B6C3488A49B6D1D21A3F9117 /* Pods.debug.xcconfig */,
-				5DBAC1BB2A47C017B3F927D7 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,13 +220,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AAD502A16937B1300FF3658 /* Build configuration list for PBXNativeTarget "Gmail Notifier" */;
 			buildPhases = (
-				CA27CB1F023A443F910F5D4A /* Check Pods Manifest.lock */,
+				3EB67C1A5E53E9FE262D6E7F /* [CP] Check Pods Manifest.lock */,
 				1AAD500816937B1300FF3658 /* Sources */,
 				1A398F591698FA94003CD8E6 /* CopyFiles */,
 				1AAD500916937B1300FF3658 /* Frameworks */,
 				1AAD500A16937B1300FF3658 /* Resources */,
-				F2FE65A9505E41BA95C9AE36 /* Copy Pods Resources */,
 				1ACB70A3169727C80003711C /* Run Script */,
+				045B3FDE1A8F3D154F9798E6 /* [CP] Embed Pods Frameworks */,
+				1922D962841275AF6B1AA652 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,7 +245,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = GN;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "James Shepherdson";
 			};
 			buildConfigurationList = 1AAD500616937B1300FF3658 /* Build configuration list for PBXProject "Gmail Notifier" */;
@@ -284,6 +285,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		045B3FDE1A8F3D154F9798E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gmail Notifier/Pods-Gmail Notifier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1922D962841275AF6B1AA652 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gmail Notifier/Pods-Gmail Notifier-resources.sh",
+				"${PODS_ROOT}/GTMOAuth2/Source/Mac/GTMOAuth2Window.xib",
+				"${PODS_ROOT}/MASPreferences/Framework/en.lproj/MASPreferencesWindow.xib",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gmail Notifier/Pods-Gmail Notifier-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1ACB70A3169727C80003711C /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,34 +334,22 @@
 			shellScript = "SHORT_HASH=`git rev-parse --short HEAD`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $SHORT_HASH\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"";
 			showEnvVarsInLog = 0;
 		};
-		CA27CB1F023A443F910F5D4A /* Check Pods Manifest.lock */ = {
+		3EB67C1A5E53E9FE262D6E7F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gmail Notifier-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F2FE65A9505E41BA95C9AE36 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -393,12 +416,22 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -407,9 +440,11 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -422,30 +457,42 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		1AAD502B16937B1300FF3658 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6C3488A49B6D1D21A3F9117 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 71935D840F829CD64B316DFD /* Pods-Gmail Notifier.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gmail Notifier/Gmail Notifier-Prefix.pch";
 				INFOPLIST_FILE = "Gmail Notifier/Gmail Notifier-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jashephe.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
@@ -454,13 +501,14 @@
 		};
 		1AAD502C16937B1300FF3658 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DBAC1BB2A47C017B3F927D7 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 69FDC68712E24877CC339650 /* Pods-Gmail Notifier.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gmail Notifier/Gmail Notifier-Prefix.pch";
 				INFOPLIST_FILE = "Gmail Notifier/Gmail Notifier-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jashephe.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;

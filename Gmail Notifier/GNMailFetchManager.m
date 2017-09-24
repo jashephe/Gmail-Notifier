@@ -8,7 +8,7 @@
 
 #import "GNMailFetchManager.h"
 #import <libextobjc/EXTScope.h>
-#import <gtm-oauth2/GTMOAuth2WindowController.h>
+#import <GTMOAuth2WindowController.h>
 #import "GNMailAccountManager.h"
 
 #pragma mark Fetch Manager Private Header
@@ -37,10 +37,14 @@
 #pragma mark Message Fetching
 
 /** Check for new messages and return a signal of GNMailMessage objects. */
-- (RACSignal *)checkForNewEmails {
-	if ([GNMailAccountManager sharedAccountManager].authentication != nil && [[GNMailAccountManager sharedAccountManager].authentication canAuthorize]) {
-		RACSignal *reponseSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-			GTMHTTPFetcher* fetcher = [GTMHTTPFetcher fetcherWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[self.messagesSource stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] relativeToURL:[NSURL URLWithString:GNOAuth2ServiceAddress]]]];
+- (RACSignal *)checkForNewEmails
+{
+	if ([GNMailAccountManager sharedAccountManager].authentication != nil &&
+        [[GNMailAccountManager sharedAccountManager].authentication canAuthorize])
+    {
+		RACSignal *reponseSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber)
+        {
+            GTMSessionFetcher* fetcher = [GTMSessionFetcher fetcherWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[self.messagesSource stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] relativeToURL:[NSURL URLWithString:GNOAuth2ServiceAddress]]]];
 			[fetcher setAuthorizer:[GNMailAccountManager sharedAccountManager].authentication];
 			[fetcher beginFetchWithCompletionHandler:^(NSData *data, NSError *error) {
 				if (!error) {
