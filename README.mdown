@@ -7,7 +7,7 @@ Minimalist Gmail inbox notifications for Mac OS X.
 ---
 
 ## Development Status
-This project is no longer actively maintained, as its author has moved away from Mac OS X. [@vitor251093](https://github.com/vitor251093) has expressed interest in continuing some development work [in his fork](https://github.com/vitor251093/Gmail-Notifier). If you are interested in having your fork added to this page, open an issue. See the end of this README for development information.
+This project is no longer actively maintained, as its author has moved away from Mac OS X. See the end of this README for development information.
 
 ---
 
